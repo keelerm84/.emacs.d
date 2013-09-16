@@ -47,6 +47,7 @@
      multiple-cursors
      php-mode
      solarized-theme
+     twittering-mode
      zenburn-theme
      )))
 
@@ -79,6 +80,7 @@
 (require 'key-bindings)
 (require 'mode-mappings)
 (require 'ido)
+(require 'twittering-mode)
 
 (eval-after-load 'ido '(require 'setup-ido))
 (eval-after-load 'magit '(require 'setup-magit))
