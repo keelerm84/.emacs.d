@@ -11,8 +11,6 @@
 (global-set-key (kbd "C-<kp-add>") 'enlarge-window)
 (global-set-key (kbd "C-<kp-subtract>") 'shrink-window)
 
-(global-set-key (kbd "C-c =") 'balance-windows)
-
 ;; Expand region
 (global-set-key (kbd "C-=") 'er/expand-region)
 (global-set-key (kbd "M-n") 'next-line)
