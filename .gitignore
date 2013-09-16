@@ -1,0 +1,5 @@
+backups/*
+el-get/*
+elpa/*
+eshell/*
+*~
