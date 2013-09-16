@@ -90,3 +90,8 @@
 
 (setq user-full-name "Matthew M. Keeler")
 (setq user-mail-address "keelerm84@gmail.com")
+
+;; Launch Emacs in daemon mode
+(require 'server)
+(unless (server-running-p)
+  (server-start))
