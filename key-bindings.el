@@ -1,4 +1,4 @@
-(global-set-key (kbd "C-c b") 'create-scratch-buffer)
+(global-set-key (kbd "C-c C-s") 'create-scratch-buffer)
 
 (global-set-key (kbd "M-s") 'save-buffer)
 
