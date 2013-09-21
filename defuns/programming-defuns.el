@@ -11,14 +11,6 @@
     ;;  tagfile already exists; update it
     (shell-command "global -u && echo 'updated tagfile'")))
 
-(defun font-lock-comment-annotations ()
-  "Highlight a bunch of well known comment annotations.
-
-This functions should be added to the hooks of major modes for programming."
-  (font-lock-add-keywords
-   nil '(("\\<\\(FIX\\(ME\\)?\\|TODO\\|OPTIMIZE\\|HACK\\|REFACTOR\\):"
-          1 font-lock-warning-face t))))
-
 (defun eval-and-replace ()
   "Replace the preceding sexp with its value."
   (interactive)

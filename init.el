@@ -39,6 +39,7 @@
      csharp-mode
      dired-details
      expand-region
+     fic-mode
      ido-ubiquitous
      jade-mode
      js2-mode
