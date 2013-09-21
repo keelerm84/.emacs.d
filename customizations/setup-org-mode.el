@@ -10,9 +10,9 @@
 
 (setq org-todo-keyword-faces
       (quote (
-              ("TODO" :foreground "gold" :weight bold)
+              ("TODO" :foreground "DarkGoldenRod3" :weight bold)
               ("WAITING" :foreground "chocolate" :weight bold)
-              ("STARTED" :foreground "yellow green" :weight bold)
+              ("STARTED" :foreground "olive drab" :weight bold)
               ("DELEGATED" :foreground "PaleVioletRed3" :weight bold)
               ("DONE" :foreground "gray" :weight bold)
               )))
