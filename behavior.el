@@ -16,4 +16,5 @@
 (set-default 'truncate-lines t)
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
+(setq twittering-use-master-password t)
 (provide 'behavior)
