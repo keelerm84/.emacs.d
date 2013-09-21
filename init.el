@@ -87,6 +87,7 @@
 (eval-after-load 'js2-mode '(require 'setup-js2-mode))
 (eval-after-load 'dired '(require 'setup-dired))
 (eval-after-load 'csharp-mode '(require 'setup-csharp))
+(eval-after-load 'twittering-mode '(require 'setup-twitter))
 
 (setq user-full-name "Matthew M. Keeler")
 (setq user-mail-address "keelerm84@gmail.com")
