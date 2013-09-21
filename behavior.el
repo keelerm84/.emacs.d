@@ -17,4 +17,15 @@
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 (setq twittering-use-master-password t)
+
+;; Text mode hooks
+(add-hook 'text-mode-hook 'flyspell-mode)
+
+;; All programming modes
+(add-hook 'prog-mode-hook 'flyspell-prog-mode)
+
+;; PHP specific hooks
+(add-hook 'prog-mode-hook 'gtags-mode)
+(add-hook 'php-mode-hook 'gtags-mode)
+
 (provide 'behavior)
