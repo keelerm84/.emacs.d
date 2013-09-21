@@ -48,6 +48,7 @@
      php-mode
      solarized-theme
      twittering-mode
+     web-mode
      zenburn-theme
      )))
 
@@ -81,6 +82,7 @@
 (require 'mode-mappings)
 (require 'ido)
 (require 'twittering-mode)
+(require 'web-mode)
 
 (eval-after-load 'ido '(require 'setup-ido))
 (eval-after-load 'magit '(require 'setup-magit))
