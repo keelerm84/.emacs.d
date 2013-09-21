@@ -41,6 +41,8 @@
 (setq ido-max-directory-size 100000)
 (ido-mode (quote both))
 
+(set-face-foreground 'org-level-5 "aquamarine4")
+
 ;;;; Refile settings
 ; Exclude DONE state tasks from refile targets
 (defun bh/verify-refile-target ()
