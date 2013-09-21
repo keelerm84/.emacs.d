@@ -8,8 +8,10 @@
 (global-set-key (kbd "C-c k") 'windmove-up)
 (global-set-key (kbd "C-c l") 'windmove-right)
 
-(global-set-key (kbd "C-<kp-add>") 'enlarge-window)
-(global-set-key (kbd "C-<kp-subtract>") 'shrink-window)
+(global-set-key (kbd "S-C-h") 'shrink-window-horizontally)
+(global-set-key (kbd "S-C-l") 'enlarge-window-horizontally)
+(global-set-key (kbd "S-C-j") 'shrink-window)
+(global-set-key (kbd "S-C-k") 'enlarge-window)
 
 ;; Expand region
 (global-set-key (kbd "C-=") 'er/expand-region)
@@ -52,6 +54,8 @@
 (global-set-key (kbd "C-c n") 'cleanup-buffer)
 (global-set-key (kbd "C-x C-r") 'rename-current-buffer-file)
 (global-set-key (kbd "C-x C-k") 'delete-current-buffer-file)
+
+(global-set-key (kbd "C-x C-b") 'ibuffer)
 
 (global-set-key (kbd "C-c e") 'eval-and-replace)
 
