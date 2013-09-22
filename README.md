@@ -24,7 +24,7 @@ with
     sudo ln -s /usr/bin/markdown2 /usr/bin/markdown
 
 In order to get the syntax highlighting in exported PDF documents from
-Org Mode, you need to install the python pygments LaTeX minted
+Org Mode, you need to install the python pygments and LaTeX minted
 packages.
 
     sudo yum install texlive-minted
