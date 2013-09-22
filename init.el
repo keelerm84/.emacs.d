@@ -77,7 +77,7 @@
 (el-get-install 'markdown-mode)
 
 (require 'appearance)
-(require 'gtags)
+(require 'ggtags)
 (require 'behavior)
 (require 'fuzzy-find-in-project)
 (require 'key-bindings)

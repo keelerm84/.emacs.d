@@ -25,7 +25,7 @@
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
 
 ;; PHP specific hooks
-(add-hook 'prog-mode-hook 'gtags-mode)
-(add-hook 'php-mode-hook 'gtags-mode)
+(add-hook 'prog-mode-hook 'ggtags-mode)
+(add-hook 'php-mode-hook 'ggtags-mode)
 
 (provide 'behavior)
