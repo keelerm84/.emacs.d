@@ -5,9 +5,9 @@
 First, clone the repository and update all required submodules
 
     git clone git://github.com/keelerm84/.emacs.d.git
-	cd .emacs.d
-	git submodule init
-	git submodule update --recursive
+    cd .emacs.d
+    git submodule init
+    git submodule update --recursive
 
 ### Dependencies
 
