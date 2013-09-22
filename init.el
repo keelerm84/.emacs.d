@@ -40,6 +40,7 @@
      dired-details
      expand-region
      fic-mode
+     ggtags
      ido-ubiquitous
      jade-mode
      js2-mode
