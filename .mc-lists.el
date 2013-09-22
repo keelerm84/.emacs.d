@@ -7,8 +7,10 @@
         c-electric-semi&comma
         eval-last-sexp
         org-delete-char
+        org-kill-line
         org-self-insert-command
         python-backspace
+        zap-up-to-char
         ))
 
 (setq mc/cmds-to-run-once
