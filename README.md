@@ -23,6 +23,11 @@ with
     sudo yum install python-markdown2
     sudo ln -s /usr/bin/markdown2 /usr/bin/markdown
 
+The use of the global tagging system requires the emacs-global
+extension.
+
+    sudo yum install emacs-global
+
 In order to get the syntax highlighting in exported PDF documents from
 Org Mode, you need to install the python pygments and LaTeX minted
 packages.
