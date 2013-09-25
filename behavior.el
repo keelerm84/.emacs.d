@@ -28,4 +28,6 @@
 (add-hook 'prog-mode-hook 'ggtags-mode)
 (add-hook 'php-mode-hook 'ggtags-mode)
 
+(yas/global-mode)
+
 (provide 'behavior)

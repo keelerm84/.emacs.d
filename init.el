@@ -93,6 +93,7 @@
 (eval-after-load 'csharp-mode '(require 'setup-csharp))
 (eval-after-load 'twittering-mode '(require 'setup-twitter))
 (eval-after-load 'org '(require 'setup-org-mode))
+(eval-after-load 'yas '(require 'setup-yasnippet))
 
 (setq user-full-name "Matthew M. Keeler")
 (setq user-mail-address "keelerm84@gmail.com")
