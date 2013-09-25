@@ -85,6 +85,7 @@
 (require 'ido)
 (require 'twittering-mode)
 (require 'web-mode)
+(require 'fic-mode)
 
 (eval-after-load 'ido '(require 'setup-ido))
 (eval-after-load 'magit '(require 'setup-magit))
@@ -94,6 +95,7 @@
 (eval-after-load 'twittering-mode '(require 'setup-twitter))
 (eval-after-load 'org '(require 'setup-org-mode))
 (eval-after-load 'yas '(require 'setup-yasnippet))
+(eval-after-load 'fic-mode '(require 'setup-fic))
 
 (setq user-full-name "Matthew M. Keeler")
 (setq user-mail-address "keelerm84@gmail.com")
