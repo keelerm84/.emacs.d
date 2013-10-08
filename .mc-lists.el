@@ -3,13 +3,20 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        c-electric-colon
         c-electric-delete-forward
+        c-electric-paren
         c-electric-semi&comma
+        c-electric-slash
+        dabbrev-expand
         eval-last-sexp
+        ido-find-file
+        kill-region
         org-delete-char
         org-kill-line
         org-self-insert-command
         python-backspace
+        python-indent-dedent-line-backspace
         zap-up-to-char
         ))
 
