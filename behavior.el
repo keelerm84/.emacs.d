@@ -30,5 +30,6 @@
 (add-hook 'php-mode-hook 'ggtags-mode)
 
 (yas/global-mode)
+(global-git-gutter-mode 1)
 
 (provide 'behavior)

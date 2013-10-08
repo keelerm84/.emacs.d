@@ -40,6 +40,7 @@
      dired-details
      expand-region
      fic-mode
+     git-gutter
      ggtags
      ido-ubiquitous
      jade-mode
