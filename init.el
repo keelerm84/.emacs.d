@@ -47,6 +47,7 @@
      magit
      molokai-theme
      multiple-cursors
+     php-auto-yasnippets
      php-mode
      solarized-theme
      twittering-mode
@@ -95,6 +96,7 @@
 (eval-after-load 'twittering-mode '(require 'setup-twitter))
 (eval-after-load 'org '(require 'setup-org-mode))
 (eval-after-load 'yas '(require 'setup-yasnippet))
+(eval-after-load 'php-mode '(require 'setup-php))
 (eval-after-load 'fic-mode '(require 'setup-fic))
 
 (setq user-full-name "Matthew M. Keeler")
