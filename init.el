@@ -38,6 +38,7 @@
      cl-lib
      csharp-mode
      dired-details
+     exec-path-from-shell
      expand-region
      fic-mode
      git-gutter
@@ -77,6 +78,9 @@
 (el-get-install 'yaml-mode)
 (el-get-install 'yasnippet)
 (el-get-install 'markdown-mode)
+
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
 
 (require 'appearance)
 (require 'ggtags)
