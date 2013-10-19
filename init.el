@@ -41,6 +41,7 @@
      exec-path-from-shell
      expand-region
      fic-mode
+     floobits
      git-gutter
      ggtags
      ido-ubiquitous
