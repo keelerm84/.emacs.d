@@ -17,6 +17,7 @@
         org-self-insert-command
         python-backspace
         python-indent-dedent-line-backspace
+        sgml-slash
         zap-up-to-char
         ))
 
