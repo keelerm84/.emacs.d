@@ -34,6 +34,7 @@
   (packages-install
    '(
      ace-jump-mode
+     ack
      change-inner
      cl-lib
      csharp-mode
