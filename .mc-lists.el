@@ -10,7 +10,9 @@
         c-electric-slash
         dabbrev-expand
         eval-last-sexp
+        forward-sexp
         ido-find-file
+        indent-for-tab-command
         kill-region
         org-delete-char
         org-kill-line
