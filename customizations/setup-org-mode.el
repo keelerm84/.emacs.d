@@ -1,8 +1,19 @@
+(set-face-font 'org-level-1 (face-font 'default))
+(set-face-font 'org-level-2 (face-font 'default))
+(set-face-font 'org-level-3 (face-font 'default))
+(set-face-font 'org-level-4 (face-font 'default))
+(set-face-font 'org-level-5 (face-font 'default))
+(set-face-font 'org-level-6 (face-font 'default))
+(set-face-font 'org-level-7 (face-font 'default))
+(set-face-font 'org-level-8 (face-font 'default))
+(set-face-attribute 'org-checkbox nil :box nil)
+
 ; Make sure the code in begin_src blocks is colorized both when
 ; editing and when exporting.
 (require 'org-latex)
-(setq org-export-latex-listings 'minted)
-(add-to-list 'org-export-latex-packages-alist '("" "minted"))
+(setq org-latex-pdf-process '("pdflatex --shell-escape -interaction nonstopmode -output-directory %o %f"))
+(setq org-latex-listings 'minted)
+(add-to-list 'org-latex-packages-alist '("" "minted"))
 (setq org-src-fontify-natively t)
 
 (setq org-todo-keywords

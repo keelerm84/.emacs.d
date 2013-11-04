@@ -51,6 +51,7 @@
      magit
      molokai-theme
      multiple-cursors
+     org
      php-auto-yasnippets
      php-mode
      solarized-theme
