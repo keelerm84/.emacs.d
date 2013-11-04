@@ -1,6 +1,8 @@
 (set-face-foreground 'diff-context nil)
 (set-face-foreground 'diff-added "DarkOliveGreen4")
+(set-face-background 'diff-added "inherit")
 (set-face-foreground 'diff-removed "indian red")
+(set-face-background 'diff-removed "inherit")
 (set-face-background 'magit-item-highlight "#002730")
 
 (defadvice magit-status (around magit-fullscreen activate)
