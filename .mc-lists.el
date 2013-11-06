@@ -14,7 +14,9 @@
         ido-find-file
         indent-for-tab-command
         kill-region
+        org-beginning-of-line
         org-delete-char
+        org-force-self-insert
         org-kill-line
         org-self-insert-command
         python-backspace
