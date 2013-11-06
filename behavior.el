@@ -8,6 +8,7 @@
 
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
+(setq-default fill-column 79)
 
 (global-auto-revert-mode 1)
 (setq global-auto-revert-non-file-buffers t)
