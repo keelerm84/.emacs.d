@@ -1,9 +1,6 @@
 [submodule "site-lisp/dash"]
 	path = site-lisp/dash
 	url = https://github.com/magnars/dash.el
-[submodule "site-lisp/fuzzy-find-in-project"]
-	path = site-lisp/fuzzy-find-in-project
-	url = https://github.com/justinweiss/fuzzy-find-in-project.git
 [submodule "site-lisp/change-inner"]
 	path = site-lisp/change-inner
 	url = https://github.com/emacsmirror/change-inner.git
