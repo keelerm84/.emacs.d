@@ -15,7 +15,8 @@
 (global-set-key (kbd "M-p") 'previous-line)
 
 ;; Project Management
-(global-set-key (kbd "C-c p") 'fuzzy-find-in-project)
+(global-set-key (kbd "C-c p") 'fiplr-find-file)
+(global-set-key (kbd "C-c C-p") 'fiplr-find-directory)
 (global-set-key (kbd "M-i") 'imenu)
 
 ;; Text manipulation

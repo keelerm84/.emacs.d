@@ -41,6 +41,7 @@
      dired-details
      exec-path-from-shell
      expand-region
+     fiplr
      fic-mode
      floobits
      git-gutter
@@ -88,7 +89,6 @@
 (require 'appearance)
 (require 'ggtags)
 (require 'behavior)
-(require 'fuzzy-find-in-project)
 (require 'key-bindings)
 (require 'mode-mappings)
 (require 'ido)
