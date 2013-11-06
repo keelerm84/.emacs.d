@@ -44,6 +44,7 @@
      fiplr
      fic-mode
      floobits
+     gist
      git-gutter
      ggtags
      ido-ubiquitous
