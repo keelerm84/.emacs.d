@@ -54,6 +54,7 @@
      molokai-theme
      multiple-cursors
      org
+     org2blog
      php-auto-yasnippets
      php-mode
      solarized-theme
@@ -107,6 +108,7 @@
 (eval-after-load 'yas '(require 'setup-yasnippet))
 (eval-after-load 'php-mode '(require 'setup-php))
 (eval-after-load 'fic-mode '(require 'setup-fic))
+(eval-after-load 'org2blog-autoloads '(require 'setup-org2blog))
 
 (setq user-full-name "Matthew M. Keeler")
 (setq user-mail-address "keelerm84@gmail.com")
