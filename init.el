@@ -55,6 +55,7 @@
      multiple-cursors
      org
      org2blog
+     org-journal
      php-auto-yasnippets
      php-mode
      solarized-theme
@@ -91,12 +92,13 @@
 (require 'appearance)
 (require 'ggtags)
 (require 'behavior)
-(require 'key-bindings)
-(require 'mode-mappings)
 (require 'ido)
 (require 'twittering-mode)
 (require 'web-mode)
 (require 'fic-mode)
+(require 'setup-org-journal)
+(require 'key-bindings)
+(require 'mode-mappings)
 
 (eval-after-load 'ido '(require 'setup-ido))
 (eval-after-load 'magit '(require 'setup-magit))
