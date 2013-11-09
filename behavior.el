@@ -33,4 +33,6 @@
 (yas/global-mode)
 (global-git-gutter-mode 1)
 
+(helm-mode 1)
+
 (provide 'behavior)

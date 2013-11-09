@@ -47,6 +47,7 @@
      gist
      git-gutter
      ggtags
+     helm
      ido-ubiquitous
      jade-mode
      js2-mode
@@ -113,6 +114,7 @@
 (eval-after-load 'php-mode '(require 'setup-php))
 (eval-after-load 'fic-mode '(require 'setup-fic))
 (eval-after-load 'org2blog-autoloads '(require 'setup-org2blog))
+(eval-after-load 'helm-mode '(require 'setup-helm))
 
 (setq user-full-name "Matthew M. Keeler")
 (setq user-mail-address "keelerm84@gmail.com")

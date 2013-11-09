@@ -1,0 +1,11 @@
+(set-face-background 'helm-selection "#002730")
+(set-face-foreground 'helm-ff-file "inherit")
+(set-face-foreground 'helm-ff-executable "inherit")
+(set-face-foreground 'helm-ff-directory "antique white")
+(set-face-foreground 'helm-ff-invalid-symlink "inherit")
+(set-face-foreground 'helm-ff-symlink "inherit")
+(set-face-foreground 'helm-source-header "antique white")
+(set-face-bold-p 'helm-source-header t)
+(set-face-font 'helm-source-header (face-font 'default))
+
+(provide 'setup-helm)
