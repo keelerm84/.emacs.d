@@ -50,6 +50,7 @@
      ido-ubiquitous
      jade-mode
      js2-mode
+     less-css-mode
      magit
      molokai-theme
      multiple-cursors
@@ -58,6 +59,7 @@
      org-journal
      php-auto-yasnippets
      php-mode
+     puppet-mode
      solarized-theme
      twittering-mode
      web-mode
