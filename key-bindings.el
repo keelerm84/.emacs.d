@@ -11,8 +11,6 @@
 
 ;; Expand region
 (global-set-key (kbd "C-=") 'er/expand-region)
-(global-set-key (kbd "M-n") 'next-line)
-(global-set-key (kbd "M-p") 'previous-line)
 
 ;; Project Management
 (global-set-key (kbd "C-c p") 'fiplr-find-file)
