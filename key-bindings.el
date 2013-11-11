@@ -11,6 +11,7 @@
 
 ;; Expand region
 (global-set-key (kbd "C-=") 'er/expand-region)
+(global-set-key (kbd "M-/") 'hippie-expand)
 
 ;; Project Management
 (global-set-key (kbd "C-c p") 'fiplr-find-file)
