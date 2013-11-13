@@ -90,6 +90,7 @@
 (el-get-install 'markdown-mode)
 
 (when (memq window-system '(mac ns))
+  (setq mac-command-modifier 'meta)
   (exec-path-from-shell-initialize))
 
 (require 'appearance)
