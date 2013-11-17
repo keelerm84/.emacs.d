@@ -64,6 +64,7 @@
      org-journal
      php-auto-yasnippets
      php-mode
+     project-explorer
      puppet-mode
      solarized-theme
      twittering-mode
@@ -107,6 +108,7 @@
 (require 'setup-org-journal)
 (require 'key-bindings)
 (require 'mode-mappings)
+(require 'project-explorer)
 
 (eval-after-load 'ido '(require 'setup-ido))
 (eval-after-load 'magit '(require 'setup-magit))
