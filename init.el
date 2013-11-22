@@ -43,6 +43,7 @@
      cl-lib
      csharp-mode
      dired-details
+     emms
      exec-path-from-shell
      expand-region
      fiplr

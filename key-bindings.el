@@ -61,6 +61,14 @@
 (global-set-key (kbd "C-c b") 'org-iswitchb)
 (define-key global-map (kbd "C-c c") 'org-capture)
 
+;; emms controls
+(global-set-key (kbd "<f5>") 'emms-shuffle)
+(global-set-key (kbd "<f6>") 'emms-pause)
+(global-set-key (kbd "<f7>") 'emms-previous)
+(global-set-key (kbd "<f8>") 'emms-next)
+(global-set-key (kbd "<f9>") 'emms-volume-lower)
+(global-set-key (kbd "<f10>") 'emms-volume-raise)
+
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
