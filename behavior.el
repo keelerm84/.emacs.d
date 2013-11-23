@@ -25,7 +25,6 @@
 ;; All programming modes
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
 (add-hook 'prog-mode-hook 'ggtags-mode)
-(add-hook 'prog-mode-hook 'fic-mode)
 
 ;; PHP specific hooks
 (add-hook 'php-mode-hook 'ggtags-mode)

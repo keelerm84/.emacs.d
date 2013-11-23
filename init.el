@@ -47,7 +47,6 @@
      exec-path-from-shell
      expand-region
      fiplr
-     fic-mode
      floobits
      gist
      git-gutter
@@ -108,7 +107,6 @@
 (require 'ido)
 (require 'twittering-mode)
 (require 'web-mode)
-(require 'fic-mode)
 (require 'setup-org-journal)
 (require 'key-bindings)
 (require 'mode-mappings)
@@ -123,7 +121,6 @@
 (eval-after-load 'org '(require 'setup-org-mode))
 (eval-after-load 'yas '(require 'setup-yasnippet))
 (eval-after-load 'php-mode '(require 'setup-php))
-(eval-after-load 'fic-mode '(require 'setup-fic))
 (eval-after-load 'org2blog-autoloads '(require 'setup-org2blog))
 (eval-after-load 'helm-mode '(require 'setup-helm))
 
