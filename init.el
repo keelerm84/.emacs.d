@@ -67,6 +67,8 @@
      php-mode
      project-explorer
      puppet-mode
+     sbt-mode
+     scala-mode2
      solarized-theme
      twittering-mode
      web-mode
