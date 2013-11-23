@@ -100,6 +100,9 @@
   (exec-path-from-shell-initialize))
 
 (require 'appearance)
+(require 'emms-setup)
+(emms-standard)
+(emms-default-players)
 (require 'ggtags)
 (require 'behavior)
 (require 'ido)
