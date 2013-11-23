@@ -8,4 +8,6 @@
 (add-to-list 'auto-mode-alist '("\\.twig$" . web-mode))
 (setq web-mode-engines-alist '(("django" . "\\.twig\\'")))
 
+(add-to-list 'auto-mode-alist '("\\.latex$" . LaTeX-mode))
+
 (provide 'mode-mappings)

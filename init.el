@@ -39,6 +39,7 @@
    '(
      ace-jump-mode
      ack
+     auctex
      change-inner
      cl-lib
      csharp-mode
