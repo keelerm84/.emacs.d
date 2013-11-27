@@ -11,26 +11,23 @@ First, clone the repository and update all required submodules
 
 ### Dependencies
 
-The fuzzy-find-in-project package requires the fuzzy\_file\_finder
-ruby gem
-
-    gem install fuzzy_file_finder
-
-In order to provide preview capabilities with the markdown plugin, you
-need to install a markdown converter.  For Fedora, you can install it
-with
+In order to provide preview capabilities with the markdown plugin, you need to
+install a markdown converter.  For Fedora, you can install it with
 
     sudo yum install python-markdown2
     sudo ln -s /usr/bin/markdown2 /usr/bin/markdown
 
-The use of the global tagging system requires the emacs-global
-extension.
+The use of the global tagging system requires the emacs-global extension.
 
     sudo yum install emacs-global
 
-In order to get the syntax highlighting in exported PDF documents from
-Org Mode, you need to install the python pygments and LaTeX minted
-packages.
+In order to get the syntax highlighting in exported PDF documents from Org
+Mode, you need to install the python pygments and LaTeX minted packages.
 
     sudo yum install texlive-minted
     sudo python3-pip install pygments
+
+Scala integration requires a couple of tools.  Obviously, you must install
+scala and sbt, but also the
+[ensime-sbt-cmd](https://github.com/aemoncannon/ensime-sbt-cmd) plugin.  Follow
+the documentation in the github README for installation details.

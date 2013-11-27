@@ -45,6 +45,7 @@
      csharp-mode
      dired-details
      emms
+     ensime
      exec-path-from-shell
      expand-region
      fiplr
@@ -126,6 +127,7 @@
 (eval-after-load 'php-mode '(require 'setup-php))
 (eval-after-load 'org2blog-autoloads '(require 'setup-org2blog))
 (eval-after-load 'helm-mode '(require 'setup-helm))
+(eval-after-load 'scala-mode2 '(require 'setup-scala))
 
 (setq user-full-name "Matthew M. Keeler")
 (setq user-mail-address "keelerm84@gmail.com")
