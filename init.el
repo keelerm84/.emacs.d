@@ -54,6 +54,7 @@
      git-gutter
      ggtags
      helm
+     helm-css-scss
      ido-ubiquitous
      jade-mode
      js2-mode
@@ -68,6 +69,7 @@
      php-mode
      project-explorer
      puppet-mode
+     sass-mode
      sbt-mode
      scala-mode2
      solarized-theme
@@ -128,6 +130,7 @@
 (eval-after-load 'org2blog-autoloads '(require 'setup-org2blog))
 (eval-after-load 'helm-mode '(require 'setup-helm))
 (eval-after-load 'scala-mode2 '(require 'setup-scala))
+(eval-after-load 'sass-mode '(require 'setup-sass))
 
 (setq user-full-name "Matthew M. Keeler")
 (setq user-mail-address "keelerm84@gmail.com")
