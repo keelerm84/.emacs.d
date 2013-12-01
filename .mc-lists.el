@@ -27,4 +27,6 @@
 
 (setq mc/cmds-to-run-once
       '(
+        yas-expand
+        yas-expand-from-trigger-key
         ))
