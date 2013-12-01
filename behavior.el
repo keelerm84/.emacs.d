@@ -26,8 +26,15 @@
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
 (add-hook 'prog-mode-hook 'ggtags-mode)
 
+(add-hook 'prog-mode-hook 'auto-complete-mode)
+
+;; Lisp programming modes
+(add-hook 'lisp-mode-hook 'turn-on-eldoc-mode)
+(add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)
+
 ;; PHP specific hooks
 (add-hook 'php-mode-hook 'ggtags-mode)
+(add-hook 'php-mode-hook 'turn-on-eldoc-mode)
 
 (yas/global-mode)
 (global-git-gutter-mode 1)

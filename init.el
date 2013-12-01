@@ -40,6 +40,7 @@
      ace-jump-mode
      ack
      auctex
+     auto-complete
      change-inner
      cl-lib
      csharp-mode
@@ -66,6 +67,7 @@
      org2blog
      org-journal
      php-auto-yasnippets
+     php-extras
      php-mode
      project-explorer
      puppet-mode
@@ -105,6 +107,7 @@
   (exec-path-from-shell-initialize))
 
 (require 'appearance)
+(require 'auto-complete)
 (require 'emms-setup)
 (emms-standard)
 (emms-default-players)
@@ -118,6 +121,7 @@
 (require 'mode-mappings)
 (require 'project-explorer)
 
+(eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'ido '(require 'setup-ido))
 (eval-after-load 'magit '(require 'setup-magit))
 (eval-after-load 'js2-mode '(require 'setup-js2-mode))
