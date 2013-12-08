@@ -57,6 +57,7 @@
      ggtags
      helm
      helm-css-scss
+     helm-projectile
      ido-ubiquitous
      jade-mode
      js2-mode
