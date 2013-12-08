@@ -68,6 +68,7 @@
 (global-set-key (kbd "<f10>") 'emms-volume-raise)
 
 ;; Lisp evaluation
+(global-set-key (kbd "C-c e e") 'eval-last-sexp)
 (global-set-key (kbd "C-c e r") 'eval-and-replace)
 (global-set-key (kbd "C-c e R") 'eval-region)
 (global-set-key (kbd "C-c e b") 'eval-current-buffer)
