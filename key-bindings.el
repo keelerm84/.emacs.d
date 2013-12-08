@@ -75,6 +75,7 @@
 
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
-(global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "C-x C-f") 'find-file)
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
 
 (provide 'key-bindings)
