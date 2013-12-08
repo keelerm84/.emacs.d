@@ -41,4 +41,6 @@
 
 (helm-mode 1)
 
+(projectile-global-mode)
+
 (provide 'behavior)

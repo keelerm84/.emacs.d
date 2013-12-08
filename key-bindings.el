@@ -14,8 +14,9 @@
 (global-set-key (kbd "M-/") 'hippie-expand)
 
 ;; Project Management
-(global-set-key (kbd "C-c p") 'fiplr-find-file)
-(global-set-key (kbd "C-c C-p") 'fiplr-find-directory)
+(global-set-key (kbd "C-c f f") 'fiplr-find-file)
+(global-set-key (kbd "C-c f d") 'fiplr-find-directory)
+(global-set-key (kbd "C-c f c") 'fiplr-clear-cache)
 (global-set-key (kbd "M-i") 'imenu)
 
 ;; Text manipulation

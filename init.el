@@ -52,6 +52,7 @@
      fiplr
      floobits
      gist
+     flx-ido
      git-gutter
      ggtags
      helm
@@ -70,6 +71,7 @@
      php-extras
      php-mode
      project-explorer
+     projectile
      puppet-mode
      sass-mode
      sbt-mode
