@@ -23,8 +23,7 @@
 (autoload 'zap-up-to-char "misc" "Kill up to, but not including ARGth occurrence of CHAR.")
 (global-set-key (kbd "M-z") 'zap-up-to-char)
 (global-set-key (kbd "M-Z") 'zap-to-char)
-
-(global-set-key (kbd "C-c e") 'eval-and-replace)
+(global-set-key (kbd "C-c d") 'duplicate-line)
 
 (global-set-key (kbd "C-x r t") 'set-rectangular-region-anchor)
 
@@ -33,8 +32,6 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-*") 'mc/mark-all-like-this)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-
-(global-set-key (kbd "C-c d") 'duplicate-line)
 
 ;; Buffer manipulation
 (global-set-key (kbd "C-c n") 'cleanup-buffer)
@@ -69,6 +66,12 @@
 (global-set-key (kbd "<f8>") 'emms-next)
 (global-set-key (kbd "<f9>") 'emms-volume-lower)
 (global-set-key (kbd "<f10>") 'emms-volume-raise)
+
+;; Lisp evaluation
+(global-set-key (kbd "C-c e r") 'eval-and-replace)
+(global-set-key (kbd "C-c e R") 'eval-region)
+(global-set-key (kbd "C-c e b") 'eval-current-buffer)
+(global-set-key (kbd "C-c e d") 'eval-defun)
 
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
