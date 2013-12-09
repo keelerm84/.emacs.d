@@ -138,6 +138,7 @@
 (eval-after-load 'helm-mode '(require 'setup-helm))
 (eval-after-load 'scala-mode2 '(require 'setup-scala))
 (eval-after-load 'sass-mode '(require 'setup-sass))
+(eval-after-load 'less-css-mode '(require 'setup-less))
 
 (setq user-full-name "Matthew M. Keeler")
 (setq user-mail-address "keelerm84@gmail.com")
