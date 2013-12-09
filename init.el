@@ -109,6 +109,7 @@
   (setq mac-command-modifier 'meta)
   (exec-path-from-shell-initialize))
 
+(require 'helm)
 (require 'appearance)
 (require 'auto-complete)
 (require 'emms-setup)
