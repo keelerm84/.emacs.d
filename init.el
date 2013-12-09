@@ -38,7 +38,7 @@
   (packages-install
    '(
      ace-jump-mode
-     ack
+     ack-and-a-half
      auctex
      auto-complete
      change-inner
