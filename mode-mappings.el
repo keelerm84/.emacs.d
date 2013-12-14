@@ -8,6 +8,7 @@
 (add-to-list 'auto-mode-alist '("\\.erb$" . web-mode))
 
 (add-to-list 'auto-mode-alist '("\\.twig$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl$" . web-mode))
 (setq web-mode-engines-alist '(("django" . "\\.twig\\'")))
 
 (add-to-list 'auto-mode-alist '("\\.latex$" . LaTeX-mode))
