@@ -68,6 +68,7 @@
      org
      org2blog
      org-journal
+     paredit
      php-auto-yasnippets
      php-extras
      php-mode
