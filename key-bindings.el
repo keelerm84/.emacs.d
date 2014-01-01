@@ -26,6 +26,7 @@
 (global-set-key (kbd "C-c d") 'duplicate-line)
 
 (global-set-key (kbd "C-x r t") 'set-rectangular-region-anchor)
+(global-set-key (kbd "C-c f j") 'format-json)
 
 ;; Multiple cursors
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
