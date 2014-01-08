@@ -45,10 +45,17 @@
 
 ;; Modes
 
-;; Magit
+;; Git
 (global-set-key (kbd "C-;") 'magit-status)
 (require 'flyspell)
 (define-key flyspell-mode-map (kbd "C-;") 'magit-status)
+
+(global-set-key (kbd "C-c g m") 'magit-status)
+(global-set-key (kbd "C-c g n") 'git-gutter:next-hunk)
+(global-set-key (kbd "C-c g p") 'git-gutter:previous-hunk)
+(global-set-key (kbd "C-c g P") 'git-gutter:popup-hunk)
+(global-set-key (kbd "C-c g s") 'git-gutter:stage-hunk)
+(global-set-key (kbd "C-c g r") 'git-gutter:revert-hunk)
 
 (global-set-key (kbd "C-x e") 'eshell)
 (global-set-key (kbd "C-c q") 'auto-fill-mode)
