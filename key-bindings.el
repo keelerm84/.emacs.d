@@ -3,6 +3,7 @@
 (global-set-key (kbd "C-c j") 'windmove-down)
 (global-set-key (kbd "C-c k") 'windmove-up)
 (global-set-key (kbd "C-c l") 'windmove-right)
+(global-set-key (kbd "C-c |") 'toggle-window-split)
 
 (global-set-key (kbd "S-C-h") 'shrink-window-horizontally)
 (global-set-key (kbd "S-C-l") 'enlarge-window-horizontally)
