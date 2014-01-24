@@ -84,3 +84,8 @@ Including indent-buffer, which should not be called automatically on save."
   (let ((face (or (get-char-property (point) 'read-face-name)
                   (get-char-property (point) 'face))))
     (if face (message "Face: %s" face) (message "No face at %d" pos))))
+
+(defun selectively-delete-trailing-whitespace ()
+  (let ((ignored-modes '("markdown-mode")))
+    (if (not (member (symbol-name major-mode) ignored-modes))
+        (delete-trailing-whitespace))))

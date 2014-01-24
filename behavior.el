@@ -21,6 +21,7 @@
 
 ;; Text mode hooks
 (add-hook 'text-mode-hook 'flyspell-mode)
+(add-hook 'before-save-hook 'selectively-delete-trailing-whitespace)
 
 ;; All programming modes
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
