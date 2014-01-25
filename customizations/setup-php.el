@@ -6,4 +6,7 @@
 
 (define-key php-mode-map (kbd "C-c C-y") 'yas/create-php-snippet)
 
+(add-hook 'php-mode-hook (lambda ()
+                           (c-set-style "pear")))
+
 (provide 'setup-php)
