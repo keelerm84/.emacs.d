@@ -125,6 +125,7 @@
 (require 'key-bindings)
 (require 'mode-mappings)
 (require 'project-explorer)
+(require 'ack-and-a-half)
 
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'ido '(require 'setup-ido))
