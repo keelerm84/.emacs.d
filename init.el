@@ -41,8 +41,11 @@
      ack-and-a-half
      auctex
      auto-complete
+     cider
      change-inner
      cl-lib
+     clojure-mode
+     clojure-test-mode
      csharp-mode
      dired-details
      emms
@@ -142,6 +145,8 @@
 (eval-after-load 'scala-mode2 '(require 'setup-scala))
 (eval-after-load 'sass-mode '(require 'setup-sass))
 (eval-after-load 'less-css-mode '(require 'setup-less))
+(eval-after-load 'clojure-test-mode '(require 'setup-clojure-test))
+(eval-after-load 'cider-mode '(require 'setup-cider))
 
 (setq user-full-name "Matthew M. Keeler")
 (setq user-mail-address "keelerm84@gmail.com")
