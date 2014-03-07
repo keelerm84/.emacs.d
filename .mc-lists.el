@@ -9,24 +9,32 @@
         c-electric-semi&comma
         c-electric-slash
         dabbrev-expand
+        delete-horizontal-space
         eval-last-sexp
+        fill-paragraph
         forward-sexp
         ido-find-file
         indent-for-tab-command
         kill-region
+        markdown-exdent-or-delete
         org-beginning-of-line
         org-delete-char
+        org-end-of-line
         org-force-self-insert
         org-kill-line
         org-self-insert-command
+        paredit-forward-delete
         python-backspace
         python-indent-dedent-line-backspace
+        rectangle-number-lines
         sgml-slash
+        yaml-electric-backspace
         zap-up-to-char
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        facemenu-set-bold-italic
         yas-expand
         yas-expand-from-trigger-key
         ))
