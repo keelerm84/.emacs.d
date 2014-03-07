@@ -17,7 +17,10 @@
 (setq org-src-fontify-natively t)
 
 (setq org-todo-keywords
-      '((sequence "TODO" "WAITING" "STARTED" "|" "DONE" "DELEGATED")))
+      '(
+        (sequence "TODO(t)" "WAITING(w)" "STARTED(s)" "|" "DONE(d)" "DELEGATED(g)")
+        (sequence "PLANNING(p)" "STARTED(s)" "CLIENT TESTING(c)" "CODE REVIEW(r)" "|" "MERGED(m)" "ON HOLD(h)")
+        ))
 
 (setq org-todo-keyword-faces
       (quote (
@@ -26,6 +29,13 @@
               ("STARTED" :foreground "olive drab" :weight bold)
               ("DELEGATED" :foreground "PaleVioletRed3" :weight bold)
               ("DONE" :foreground "gray" :weight bold)
+
+              ("PLANNING" :foreground "DarkGoldenRod3" :weight bold)
+              ("STARTED" :foreground "chocolate" :weight bold)
+              ("CLIENT TESTING" :foreground "light coral" :weight bold)
+              ("CODE REVIEW" :foreground "sandy brown" :weight bold)
+              ("MERGED" :foreground "dark cyan" :weight bold)
+              ("ON HOLD" :foreground "gray" :weight bold)
               )))
 
 (setq org-log-done 'time)
