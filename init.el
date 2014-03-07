@@ -77,6 +77,7 @@
      php-mode
      project-explorer
      projectile
+     projectile-rails
      puppet-mode
      sass-mode
      sbt-mode

@@ -46,6 +46,9 @@
 (add-hook 'php-mode-hook 'ggtags-mode)
 (add-hook 'php-mode-hook 'turn-on-eldoc-mode)
 
+;; Projectile hooks
+(add-hook 'projectile-mode-hook 'projectile-rails-on)
+
 (yas/global-mode)
 (global-git-gutter-mode 1)
 
