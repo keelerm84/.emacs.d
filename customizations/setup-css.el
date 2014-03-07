@@ -10,4 +10,4 @@
                     'helm-css-scss)
      )))
 
-(provide 'setup-less)
+(provide 'setup-css)

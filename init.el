@@ -143,8 +143,9 @@
 (eval-after-load 'org2blog-autoloads '(require 'setup-org2blog))
 (eval-after-load 'helm-mode '(require 'setup-helm))
 (eval-after-load 'scala-mode2 '(require 'setup-scala))
-(eval-after-load 'sass-mode '(require 'setup-sass))
-(eval-after-load 'less-css-mode '(require 'setup-less))
+(eval-after-load 'sass-mode '(require 'setup-css))
+(eval-after-load 'less-css-mode '(require 'setup-css))
+(eval-after-load 'css-mode '(require 'setup-css))
 (eval-after-load 'clojure-test-mode '(require 'setup-clojure-test))
 (eval-after-load 'cider-mode '(require 'setup-cider))
 
