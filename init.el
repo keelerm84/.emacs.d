@@ -52,6 +52,7 @@
      ensime
      exec-path-from-shell
      expand-region
+     evil
      fiplr
      floobits
      gist
@@ -83,6 +84,7 @@
      sbt-mode
      scala-mode2
      solarized-theme
+     surround
      twittering-mode
      web-mode
      zenburn-theme
@@ -130,6 +132,8 @@
 (require 'mode-mappings)
 (require 'project-explorer)
 (require 'ack-and-a-half)
+(require 'evil)
+(require 'surround)
 
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'ido '(require 'setup-ido))

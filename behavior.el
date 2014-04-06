@@ -26,6 +26,8 @@
 (yas/global-mode)
 (global-git-gutter-mode 1)
 
+(evil-mode 1)
+(global-surround-mode 1)
 (helm-mode 1)
 
 (projectile-global-mode)
