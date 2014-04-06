@@ -19,6 +19,17 @@
 
 (setq twittering-use-master-password t)
 
+;; Global Modes
+(show-paren-mode 1)
+(setq show-paren-delay 0)
+
+(yas/global-mode)
+(global-git-gutter-mode 1)
+
+(helm-mode 1)
+
+(projectile-global-mode)
+
 ;; Text mode hooks
 (add-hook 'text-mode-hook 'flyspell-mode)
 (add-hook 'before-save-hook 'selectively-delete-trailing-whitespace)
@@ -48,12 +59,5 @@
 
 ;; Projectile hooks
 (add-hook 'projectile-mode-hook 'projectile-rails-on)
-
-(yas/global-mode)
-(global-git-gutter-mode 1)
-
-(helm-mode 1)
-
-(projectile-global-mode)
 
 (provide 'behavior)
