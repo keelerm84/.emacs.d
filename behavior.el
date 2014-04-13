@@ -62,4 +62,7 @@
 ;; Projectile hooks
 (add-hook 'projectile-mode-hook 'projectile-rails-on)
 
+;; Compilation
+(add-hook 'compilation-filter-hook 'colorize-compilation-buffer)
+
 (provide 'behavior)
