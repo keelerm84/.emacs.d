@@ -53,6 +53,7 @@
      exec-path-from-shell
      expand-region
      evil
+     feature-mode
      fiplr
      floobits
      gist
@@ -134,6 +135,7 @@
 (require 'ack-and-a-half)
 (require 'evil)
 (require 'surround)
+(require 'feature-mode)
 
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'ido '(require 'setup-ido))
