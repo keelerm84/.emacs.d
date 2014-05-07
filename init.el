@@ -88,6 +88,7 @@
      surround
      twittering-mode
      web-mode
+     windresize
      zenburn-theme
      )))
 
@@ -136,6 +137,7 @@
 (require 'evil)
 (require 'surround)
 (require 'feature-mode)
+(require 'windresize)
 
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'ido '(require 'setup-ido))

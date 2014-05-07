@@ -5,10 +5,7 @@
 (global-set-key (kbd "C-c l") 'windmove-right)
 (global-set-key (kbd "C-c |") 'toggle-window-split)
 
-(global-set-key (kbd "S-C-h") 'shrink-window-horizontally)
-(global-set-key (kbd "S-C-l") 'enlarge-window-horizontally)
-(global-set-key (kbd "S-C-j") 'shrink-window)
-(global-set-key (kbd "S-C-k") 'enlarge-window)
+(global-set-key (kbd "C-c r w") 'windresize)
 
 ;; Expand region
 (global-set-key (kbd "C-=") 'er/expand-region)
