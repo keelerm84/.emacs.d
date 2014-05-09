@@ -48,6 +48,7 @@
      clojure-test-mode
      csharp-mode
      dired-details
+     dirtree
      emms
      ensime
      exec-path-from-shell
@@ -137,6 +138,7 @@
 (require 'evil)
 (require 'surround)
 (require 'feature-mode)
+(require 'dirtree)
 (require 'windresize)
 
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
