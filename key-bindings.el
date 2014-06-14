@@ -7,6 +7,7 @@
 (global-set-key [pause] 'toggle-window-dedicated)
 
 (global-set-key (kbd "C-c r w") 'windresize)
+(global-set-key (kbd "C-c w j") 'ace-window)
 
 ;; Expand region
 (global-set-key (kbd "C-=") 'er/expand-region)

@@ -38,6 +38,7 @@
   (packages-install
    '(
      ace-jump-mode
+     ace-window
      ack-and-a-half
      auctex
      auto-complete
