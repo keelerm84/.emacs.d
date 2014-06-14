@@ -4,19 +4,16 @@
 (global-set-key (kbd "C-c k") 'windmove-up)
 (global-set-key (kbd "C-c l") 'windmove-right)
 (global-set-key (kbd "C-c |") 'toggle-window-split)
-(global-set-key [pause] 'toggle-window-dedicated)
 
-(global-set-key (kbd "C-c r w") 'windresize)
+(global-set-key (kbd "C-c w r") 'windresize)
 (global-set-key (kbd "C-c w j") 'ace-window)
+(global-set-key (kbd "C-c w d") 'toggle-window-dedicated)
 
 ;; Expand region
-(global-set-key (kbd "C-=") 'er/expand-region)
+(global-set-key (kbd "M-=") 'er/expand-region)
 (global-set-key (kbd "M-/") 'hippie-expand)
 
 ;; Project Management
-(global-set-key (kbd "C-c f f") 'fiplr-find-file)
-(global-set-key (kbd "C-c f d") 'fiplr-find-directory)
-(global-set-key (kbd "C-c f c") 'fiplr-clear-cache)
 (global-set-key (kbd "M-i") 'imenu)
 
 ;; Text manipulation
@@ -43,14 +40,11 @@
 (global-set-key (kbd "M-s") 'save-buffer)
 
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
 
 ;; Modes
 
 ;; Git
-(global-set-key (kbd "C-;") 'magit-status)
-(require 'flyspell)
-(define-key flyspell-mode-map (kbd "C-;") 'magit-status)
-
 (global-set-key (kbd "C-c g m") 'magit-status)
 (global-set-key (kbd "C-c g n") 'git-gutter:next-hunk)
 (global-set-key (kbd "C-c g p") 'git-gutter:previous-hunk)
@@ -85,6 +79,5 @@
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
 (global-set-key (kbd "C-x C-f") 'find-file)
-(global-set-key (kbd "C-x b") 'helm-buffers-list)
 
 (provide 'key-bindings)

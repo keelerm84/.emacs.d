@@ -56,7 +56,6 @@
      expand-region
      evil
      feature-mode
-     fiplr
      floobits
      gist
      flx-ido
