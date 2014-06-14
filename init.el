@@ -58,6 +58,7 @@
      feature-mode
      floobits
      gist
+     flycheck
      flx-ido
      git-gutter
      ggtags
@@ -84,6 +85,7 @@
      sass-mode
      sbt-mode
      scala-mode2
+     smartscan
      solarized-theme
      surround
      twittering-mode

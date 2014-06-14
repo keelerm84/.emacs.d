@@ -31,6 +31,11 @@
 (helm-mode 1)
 
 (projectile-global-mode)
+(global-smartscan-mode)
+
+;; Global hooks
+(add-hook 'after-init-hook #'global-flycheck-mode)
+(setq flycheck-indication-mode 'right-fringe)
 
 ;; Text mode hooks
 (add-hook 'text-mode-hook 'flyspell-mode)
