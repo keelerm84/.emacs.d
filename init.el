@@ -78,7 +78,6 @@
      php-auto-yasnippets
      php-extras
      php-mode
-     project-explorer
      projectile
      projectile-rails
      puppet-mode
@@ -133,7 +132,6 @@
 (require 'setup-org-journal)
 (require 'key-bindings)
 (require 'mode-mappings)
-(require 'project-explorer)
 (require 'ack-and-a-half)
 (require 'evil)
 (require 'surround)
