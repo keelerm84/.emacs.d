@@ -58,6 +58,7 @@
      feature-mode
      floobits
      gist
+     git-timemachine
      flycheck
      flx-ido
      git-gutter
