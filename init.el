@@ -160,6 +160,7 @@
 (eval-after-load 'css-mode '(require 'setup-css))
 (eval-after-load 'clojure-test-mode '(require 'setup-clojure-test))
 (eval-after-load 'cider-mode '(require 'setup-cider))
+(eval-after-load 'projectile-mode '(require 'setup-projectile))
 
 (setq user-full-name "Matthew M. Keeler")
 (setq user-mail-address "keelerm84@gmail.com")
