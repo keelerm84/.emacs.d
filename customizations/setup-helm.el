@@ -7,5 +7,6 @@
 (set-face-foreground 'helm-source-header "antique white")
 (set-face-bold-p 'helm-source-header t)
 (set-face-font 'helm-source-header (face-font 'default))
+(setq helm-exit-idle-delay 0)
 
 (provide 'setup-helm)
