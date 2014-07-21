@@ -36,7 +36,7 @@
 (global-set-key (kbd "C-x C-r") 'rename-current-buffer-file)
 (global-set-key (kbd "C-x C-k") 'delete-current-buffer-file)
 
-(global-set-key (kbd "C-c C-s") 'create-scratch-buffer)
+(global-set-key (kbd "C-c s") 'create-scratch-buffer)
 (global-set-key (kbd "M-s") 'save-buffer)
 
 (global-set-key (kbd "C-x C-b") 'ibuffer)
