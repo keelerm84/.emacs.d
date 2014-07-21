@@ -1,8 +1,9 @@
 (require 'helm-css-scss)
 
 (setq helm-css-scss-split-window-vertically t)
+(setq scss-compile-at-save nil)
 
-(dolist ($hook '(less-css-mode-hook))
+(dolist ($hook '(css-mode-hook less-css-mode-hook scss-mode-hook))
   (add-hook
    $hook
    (lambda ()

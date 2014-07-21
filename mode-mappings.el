@@ -3,7 +3,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.cs$" . csharp-mode))
 
-(add-to-list 'auto-mode-alist '("\\.scss$" . sass-mode))
+(add-to-list 'auto-mode-alist '("\\.scss$" . scss-mode))
 
 (add-to-list 'auto-mode-alist '("\\.erb$" . web-mode))
 
