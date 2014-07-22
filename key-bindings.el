@@ -80,4 +80,9 @@
 
 (global-set-key (kbd "C-x C-f") 'find-file)
 
+(key-chord-define-global "jw" 'ace-jump-mode)
+(key-chord-define-global "jc" 'ace-jump-char-mode)
+(key-chord-define-global "jl" 'ace-jump-line-mode)
+(key-chord-define-global "jf" 'ace-window)
+
 (provide 'key-bindings)

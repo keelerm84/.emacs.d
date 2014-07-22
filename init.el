@@ -69,6 +69,7 @@
      ido-ubiquitous
      jade-mode
      js2-mode
+     key-chord
      less-css-mode
      magit
      molokai-theme
@@ -141,6 +142,7 @@
 (require 'feature-mode)
 (require 'dirtree)
 (require 'windresize)
+(require 'key-chord)
 
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'ido '(require 'setup-ido))
