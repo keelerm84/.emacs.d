@@ -6,3 +6,8 @@ eshell/*
 emms/*
 *elc
 /image-dired/
+/custom.el
+/projectile-bookmarks.eld
+/url/
+/var/
+/bookmarks
