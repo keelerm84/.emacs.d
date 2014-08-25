@@ -69,6 +69,8 @@
 (global-set-key (kbd "<f9>") 'emms-volume-lower)
 (global-set-key (kbd "<f10>") 'emms-volume-raise)
 
+(global-set-key (kbd "<f2>") 'neotree-toggle)
+
 ;; Lisp evaluation
 (global-set-key (kbd "C-c e e") 'eval-last-sexp)
 (global-set-key (kbd "C-c e r") 'eval-and-replace)

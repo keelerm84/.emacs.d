@@ -74,6 +74,7 @@
      magit
      molokai-theme
      multiple-cursors
+     neotree
      org
      org2blog
      org-journal
@@ -143,6 +144,7 @@
 (require 'dirtree)
 (require 'windresize)
 (require 'key-chord)
+(require 'neotree)
 
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'ido '(require 'setup-ido))
