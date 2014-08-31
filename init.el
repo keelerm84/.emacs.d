@@ -69,6 +69,7 @@
      ido-ubiquitous
      jade-mode
      js2-mode
+     json-mode
      key-chord
      less-css-mode
      magit
