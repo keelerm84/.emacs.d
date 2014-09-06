@@ -26,3 +26,16 @@ BEG and END (region to sort)."
                (format "^%s" (regexp-quote (car kill-ring))) nil t)
             (replace-match "" nil nil))
           (goto-char next-line))))))
+
+(defun region-or-line ()
+  (if (use-region-p)
+      (list (region-beginning) (region-end))
+    (list (line-beginning-position) (line-beginning-position 2))))
+
+(defun my-kill-ring-save (beg end)
+  (interactive (region-or-line))
+  (kill-ring-save beg end))
+
+(defun my-kill-region (beg end)
+  (interactive (region-or-line))
+  (kill-region beg end))
