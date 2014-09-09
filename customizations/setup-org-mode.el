@@ -41,7 +41,7 @@
 (setq org-log-done 'time)
 
 (setq org-directory "~/Documents/Dropbox/OrgFiles/")
-(setq org-agenda-files `(,org-directory))
+(setq org-agenda-files `(,org-directory "~/Documents/Dropbox/OrgFiles/Tortugas"))
 (setq org-default-notes-file (concat org-directory "refile.org"))
 
 ; Targets include this file and any file contributing to the agenda - up to 9 levels deep
@@ -56,6 +56,10 @@
 
 ; Allow refile to create parent tasks with confirmation
 (setq org-refile-allow-creating-parent-nodes (quote confirm))
+
+(setq org-agenda-custom-commands
+      '(("r" "Research Square TODOs" ((agenda "" nil) (alltodo "" nil))
+         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/rs.org"))))))
 
 ; Use IDO for both buffer and file completion and ido-everywhere to t
 (setq org-completion-use-ido t)
