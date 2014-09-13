@@ -89,4 +89,14 @@
 (key-chord-define-global "jl" 'ace-jump-line-mode)
 (key-chord-define-global "jf" 'ace-window)
 
+;;; Prime jump-to-register with commonly accessed files
+(mapcar
+ (lambda (r)
+   (set-register (car r) (cons 'file (cdr r))))
+ '((?d . "~/Downloads")
+   (?i . "~/.emacs.d/init.el")
+   (?l . "~/Documents/Dropbox/personal.ledger")
+   (?o . "~/Documents/Dropbox/OrgFiles/")
+   (?t . "~/Documents/Dropbox/OrgFiles/Tortugas/")))
+
 (provide 'key-bindings)
