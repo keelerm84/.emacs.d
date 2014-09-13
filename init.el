@@ -71,6 +71,7 @@
      js2-mode
      json-mode
      key-chord
+     ledger-mode
      less-css-mode
      magit
      molokai-theme
@@ -146,6 +147,7 @@
 (require 'windresize)
 (require 'key-chord)
 (require 'neotree)
+(require 'ledger-mode)
 
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'ido '(require 'setup-ido))

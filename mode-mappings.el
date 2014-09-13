@@ -16,4 +16,6 @@
 
 (add-to-list 'auto-mode-alist '("\\.latex$" . LaTeX-mode))
 
+(add-to-list 'auto-mode-alist '("\\.ledger$" . ledger-mode))
+
 (provide 'mode-mappings)
