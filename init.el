@@ -168,7 +168,7 @@
 (eval-after-load 'css-mode '(require 'setup-css))
 (eval-after-load 'clojure-test-mode '(require 'setup-clojure-test))
 (eval-after-load 'cider-mode '(require 'setup-cider))
-(eval-after-load 'projectile-mode '(require 'setup-projectile))
+(eval-after-load 'projectile '(require 'setup-projectile))
 (eval-after-load 'ledger-mode '(require 'setup-ledger))
 
 (setq user-full-name "Matthew M. Keeler")
