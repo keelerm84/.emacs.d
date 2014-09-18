@@ -11,6 +11,7 @@
 
 (provide 'setup-helm)
 (setq helm-exit-idle-delay 0)
+(setq helm-buffer-max-length nil)
 
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
 (global-set-key (kbd "M-x") 'helm-M-x)
