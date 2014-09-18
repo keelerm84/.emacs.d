@@ -11,3 +11,9 @@ emms/*
 /url/
 /var/
 /bookmarks
+/custom.el
+/projectile-bookmarks.eld
+/projectile.cache
+/url/
+/geben/
+/ac-comphist.dat
