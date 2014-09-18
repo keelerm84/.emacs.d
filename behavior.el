@@ -19,6 +19,8 @@
 
 (setq twittering-use-master-password t)
 
+(add-to-list 'hippie-expand-try-functions-list 'try-expand-line-all-buffers)
+
 ;; Global Modes
 (show-paren-mode 1)
 (setq show-paren-delay 0)
