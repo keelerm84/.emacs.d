@@ -38,4 +38,8 @@
 
 (add-hook 'magit-log-edit-mode-hook (lambda() (flyspell-mode t)))
 
+(add-hook 'magit-log-mode-hook
+          (lambda ()
+            (define-key magit-log-mode-map (kbd "w") 'magit-copy-item-as-kill)))
+
 (provide 'setup-magit)
