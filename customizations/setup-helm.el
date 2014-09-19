@@ -9,7 +9,6 @@
 (set-face-font 'helm-source-header (face-font 'default))
 (setq helm-exit-idle-delay 0)
 
-(provide 'setup-helm)
 (setq helm-exit-idle-delay 0)
 (setq helm-buffer-max-length nil)
 
@@ -21,3 +20,4 @@
 (global-set-key (kbd "C-c C-h m") 'helm-all-mark-rings)
 (global-set-key (kbd "C-c C-h w") 'helm-man-woman)
 
+(provide 'setup-helm)
