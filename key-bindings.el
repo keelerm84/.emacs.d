@@ -53,6 +53,7 @@
 (global-set-key (kbd "C-c g s") 'git-gutter:stage-hunk)
 (global-set-key (kbd "C-c g r") 'git-gutter:revert-hunk)
 (global-set-key (kbd "C-c g t m") 'git-timemachine)
+(global-set-key (kbd "C-c g g") 'vc-git-grep)
 
 (global-set-key (kbd "C-x e") 'eshell)
 (global-set-key (kbd "C-c q") 'auto-fill-mode)
