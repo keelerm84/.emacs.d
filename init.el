@@ -84,6 +84,7 @@
      php-auto-yasnippets
      php-extras
      php-mode
+     php-refactor-mode
      projectile
      projectile-rails
      puppet-mode
