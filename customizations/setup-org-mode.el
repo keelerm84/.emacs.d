@@ -77,4 +77,7 @@
 
 (setq org-refile-target-verify-function 'bh/verify-refile-target)
 
+(add-to-list 'org-global-properties
+      '("Effort_ALL". "0:05 0:15 0:30 1:00 2:00 3:00 4:00 8:00 16:00 24:00"))
+
 (provide 'setup-org-mode)
