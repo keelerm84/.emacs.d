@@ -150,6 +150,7 @@
 (require 'neotree)
 (require 'ledger-mode)
 (require 'gist)
+(require 'vc-git)
 
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'ido '(require 'setup-ido))
