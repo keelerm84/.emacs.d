@@ -14,6 +14,9 @@
 (setq org-latex-pdf-process '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
 (setq org-latex-listings 'minted)
 (add-to-list 'org-latex-packages-alist '("" "minted"))
+
+(setq org-latex-create-formula-image-program 'imagemagick)
+
 (setq org-src-fontify-natively t)
 
 (setq org-todo-keywords
