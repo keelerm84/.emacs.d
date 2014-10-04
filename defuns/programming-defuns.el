@@ -31,3 +31,12 @@
   (toggle-read-only)
   (ansi-color-apply-on-region (point-min) (point-max))
   (toggle-read-only))
+
+(defun sort-php-namespaces ()
+  (interactive)
+  (save-excursion
+    (backward-paragraph)
+    (next-line)
+    (let ((start (point)))
+      (forward-paragraph)
+      (shell-command-on-region start (point) "sort -u" nil t))))
