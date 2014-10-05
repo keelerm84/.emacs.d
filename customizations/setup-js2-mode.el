@@ -13,4 +13,7 @@
 
 (define-key js2-mode-map (kbd "TAB") 'js2-tab-properly)
 
+(require 'js2-refactor)
+(js2r-add-keybindings-with-prefix "C-c C-m")
+
 (provide 'setup-js2-mode)

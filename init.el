@@ -69,6 +69,7 @@
      ido-ubiquitous
      jade-mode
      js2-mode
+     js2-refactor
      json-mode
      key-chord
      ledger-mode
