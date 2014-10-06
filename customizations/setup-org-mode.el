@@ -62,7 +62,25 @@
 
 (setq org-agenda-custom-commands
       '(("r" "Research Square TODOs" ((agenda "" nil) (alltodo "" nil))
-         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/rs.org"))))))
+         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/rs.org"))))
+        ("p" . "Personal")
+        ("pt" "TODOs" ((agenda "" nil) (alltodo "" nil))
+         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/personal.org"))))
+        ("pi" "Project Ideas" ((search "*"))
+         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/projects.org"))))
+        ("c" "Consulting TODOs" ((agenda "" nil) (alltodo "" nil))
+         ((org-agenda-files (file-expand-wildcards "~/Documents/Dropbox/OrgFiles/Tortugas/*.org"))))
+        ("i" . "Improvements")
+        ("il" "Learn" tags "CATEGORY=\"learn\""
+         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/improvements.org"))))
+        ("ir" "Read" tags "CATEGORY=\"read\""
+         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/improvements.org"))))
+        ("iw" "Watch" tags "CATEGORY=\"watch\""
+         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/improvements.org"))))
+        ("ia" "All Agenda" ((agenda "" nil))
+         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/improvements.org"))))
+        ("is" "Search specific tag" ((agenda "" nil) (tags))
+         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/improvements.org"))))))
 
 ; Use IDO for both buffer and file completion and ido-everywhere to t
 (setq org-completion-use-ido t)
