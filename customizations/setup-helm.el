@@ -1,14 +1,3 @@
-(set-face-background 'helm-selection "#002730")
-(set-face-foreground 'helm-ff-file (face-foreground 'default))
-(set-face-foreground 'helm-ff-executable (face-foreground 'default))
-(set-face-foreground 'helm-ff-directory "antique white")
-(set-face-foreground 'helm-ff-invalid-symlink (face-foreground 'default))
-(set-face-foreground 'helm-ff-symlink (face-foreground 'default))
-(set-face-foreground 'helm-source-header "antique white")
-(set-face-bold-p 'helm-source-header t)
-(set-face-font 'helm-source-header (face-font 'default))
-(setq helm-exit-idle-delay 0)
-
 (setq helm-exit-idle-delay 0)
 (setq helm-buffer-max-length nil)
 

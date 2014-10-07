@@ -2,7 +2,7 @@
 
 (add-to-list 'default-frame-alist
 						 `(font . "Meslo LG S for Powerline-12"))
-(load-theme 'solarized-dark)
+(load-theme 'zenburn)
 
 (column-number-mode t)
 
