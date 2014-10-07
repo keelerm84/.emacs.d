@@ -70,6 +70,8 @@
          ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/projects.org"))))
         ("c" "Consulting TODOs" ((agenda "" nil) (alltodo "" nil))
          ((org-agenda-files (file-expand-wildcards "~/Documents/Dropbox/OrgFiles/Tortugas/*.org"))))
+        ("b" "Blog Ideas" ((agenda "" nil) (search "*"))
+         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/blog.org"))))
         ("i" . "Improvements")
         ("il" "Learn" tags "CATEGORY=\"learn\""
          ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/improvements.org"))))
