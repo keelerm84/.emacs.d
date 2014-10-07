@@ -50,6 +50,7 @@
      csharp-mode
      dired-details
      dirtree
+     discover-my-major
      emms
      ensime
      exec-path-from-shell

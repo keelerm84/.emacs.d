@@ -96,6 +96,8 @@
 (key-chord-define-global "jl" 'ace-jump-line-mode)
 (key-chord-define-global "jf" 'ace-window)
 
+(global-set-key (kbd "C-h C-m") 'discover-my-major)
+
 ;;; Prime jump-to-register with commonly accessed files
 (mapcar
  (lambda (r)
