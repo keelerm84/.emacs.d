@@ -76,6 +76,14 @@
         ("is" "Search specific tag" ((agenda "" nil) (tags))
          ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/improvements.org"))))))
 
+(setq org-capture-templates
+      '(("t" "Todo" entry (file+headline "~/Documents/Dropbox/OrgFiles/refile.org" "Tasks")
+         "* TODO %?\n  %i\n  %a")
+        ("b" "Blog Ideas" entry (file "~/Documents/Dropbox/OrgFiles/blog.org")
+         "* TODO %?")
+        ("i" "Improvement" entry (file "~/Documents/Dropbox/OrgFiles/improvements.org")
+         "* TODO %?%^g%^{CATEGORY}p")))
+
 ; Use IDO for both buffer and file completion and ido-everywhere to t
 (setq org-completion-use-ido t)
 (setq ido-everywhere t)
