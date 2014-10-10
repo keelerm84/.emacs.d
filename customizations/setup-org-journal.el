@@ -1,4 +1,4 @@
-(setq org-journal-dir "~/Documents/Dropbox/OrgFiles/journal/")
+(setq org-journal-dir (my/org-path "journal/"))
 
 (require 'org-journal)
 (global-set-key (kbd "C-x j") 'org-journal-new-entry)

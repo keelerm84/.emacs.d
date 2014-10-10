@@ -35,9 +35,8 @@
 
 (setq org-log-done 'time)
 
-(setq org-directory "~/Documents/Dropbox/OrgFiles/")
-(setq org-agenda-files `(,org-directory "~/Documents/Dropbox/OrgFiles/Tortugas"))
-(setq org-default-notes-file (concat org-directory "refile.org"))
+(setq org-agenda-files (list org-directory (my/org-path "Tortugas")))
+(setq org-default-notes-file (my/org-path "refile.org"))
 
 ; Targets include this file and any file contributing to the agenda - up to 9 levels deep
 (setq org-refile-targets (quote ((nil :maxlevel . 9)
@@ -54,34 +53,34 @@
 
 (setq org-agenda-custom-commands
       '(("r" "Research Square TODOs" ((agenda "" nil) (alltodo "" nil))
-         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/rs.org"))))
+         ((org-agenda-files (list (my/org-path "rs.org")))))
         ("p" . "Personal")
         ("pt" "TODOs" ((agenda "" nil) (alltodo "" nil))
-         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/personal.org"))))
+         ((org-agenda-files (list (my/org-path "personal.org")))))
         ("pi" "Project Ideas" ((search "*"))
-         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/projects.org"))))
+         ((org-agenda-files (list (my/org-path "projects.org")))))
         ("c" "Consulting TODOs" ((agenda "" nil) (alltodo "" nil))
-         ((org-agenda-files (file-expand-wildcards "~/Documents/Dropbox/OrgFiles/Tortugas/*.org"))))
+         ((org-agenda-files (file-expand-wildcards (my/org-path "Tortugas/*.org")))))
         ("b" "Blog Ideas" ((agenda "" nil) (search "*"))
-         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/blog.org"))))
+         ((org-agenda-files (list (my/org-path "blog.org")))))
         ("i" . "Improvements")
         ("il" "Learn" tags "CATEGORY=\"learn\""
-         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/improvements.org"))))
+         ((org-agenda-files (list (my/org-path "improvements.org")))))
         ("ir" "Read" tags "CATEGORY=\"read\""
-         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/improvements.org"))))
+         ((org-agenda-files (list (my/org-path "improvements.org")))))
         ("iw" "Watch" tags "CATEGORY=\"watch\""
-         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/improvements.org"))))
+         ((org-agenda-files (list (my/org-path "improvements.org")))))
         ("ia" "All Agenda" ((agenda "" nil))
-         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/improvements.org"))))
+         ((org-agenda-files (list (my/org-path "improvements.org")))))
         ("is" "Search specific tag" ((agenda "" nil) (tags))
-         ((org-agenda-files '("~/Documents/Dropbox/OrgFiles/improvements.org"))))))
+         ((org-agenda-files (list (my/org-path "improvements.org")))))))
 
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline "~/Documents/Dropbox/OrgFiles/refile.org" "Tasks")
-         "* TODO %?\n  %i\n  %a")
-        ("b" "Blog Ideas" entry (file "~/Documents/Dropbox/OrgFiles/blog.org")
+      '(("t" "Todo" entry (file+headline (my/org-path "refile.org") "Tasks")
          "* TODO %?")
-        ("i" "Improvement" entry (file "~/Documents/Dropbox/OrgFiles/improvements.org")
+        ("b" "Blog Ideas" entry (file (my/org-path "blog.org"))
+         "* TODO %?")
+        ("i" "Improvement" entry (file (my/org-path "improvements.org"))
          "* TODO %?%^g%^{CATEGORY}p")))
 
 ; Use IDO for both buffer and file completion and ido-everywhere to t

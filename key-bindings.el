@@ -102,10 +102,12 @@
 (mapcar
  (lambda (r)
    (set-register (car r) (cons 'file (cdr r))))
- '((?d . "~/Downloads")
+ `((?d . "~/Downloads")
    (?i . "~/.emacs.d/init.el")
    (?l . "~/Documents/Dropbox/personal.ledger")
-   (?o . "~/Documents/Dropbox/OrgFiles/")
-   (?t . "~/Documents/Dropbox/OrgFiles/Tortugas/")))
+   (?o . ,org-directory)
+   (?t . ,(my/org-path "Tortugas"))))
 
 (provide 'key-bindings)
+
+org-directory
