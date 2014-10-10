@@ -23,6 +23,7 @@
         indent-new-comment-line
         kill-region
         markdown-exdent-or-delete
+        my-kill-region
         org-beginning-of-line
         org-delete-char
         org-end-of-line
@@ -30,7 +31,10 @@
         org-kill-line
         org-self-insert-command
         orgtbl-self-insert-command
+        paredit-forward
         paredit-forward-delete
+        paredit-forward-kill-word
+        paredit-forward-slurp-sexp
         paredit-open-round
         python-backspace
         python-indent-dedent-line-backspace
