@@ -35,8 +35,8 @@
 
 (setq org-log-done 'time)
 
-(setq org-agenda-files (list org-directory (my/org-path "Tortugas")))
-(setq org-default-notes-file (my/org-path "refile.org"))
+(setq org-agenda-files (list org-directory (keelerm/org-path "Tortugas")))
+(setq org-default-notes-file (keelerm/org-path "refile.org"))
 
 ; Targets include this file and any file contributing to the agenda - up to 9 levels deep
 (setq org-refile-targets (quote ((nil :maxlevel . 9)
@@ -53,34 +53,34 @@
 
 (setq org-agenda-custom-commands
       '(("r" "Research Square TODOs" ((agenda "" nil) (alltodo "" nil))
-         ((org-agenda-files (list (my/org-path "rs.org")))))
+         ((org-agenda-files (list (keelerm/org-path "rs.org")))))
         ("p" . "Personal")
         ("pt" "TODOs" ((agenda "" nil) (alltodo "" nil))
-         ((org-agenda-files (list (my/org-path "personal.org")))))
+         ((org-agenda-files (list (keelerm/org-path "personal.org")))))
         ("pi" "Project Ideas" ((search "*"))
-         ((org-agenda-files (list (my/org-path "projects.org")))))
+         ((org-agenda-files (list (keelerm/org-path "projects.org")))))
         ("c" "Consulting TODOs" ((agenda "" nil) (alltodo "" nil))
-         ((org-agenda-files (file-expand-wildcards (my/org-path "Tortugas/*.org")))))
+         ((org-agenda-files (file-expand-wildcards (keelerm/org-path "Tortugas/*.org")))))
         ("b" "Blog Ideas" ((agenda "" nil) (search "*"))
-         ((org-agenda-files (list (my/org-path "blog.org")))))
+         ((org-agenda-files (list (keelerm/org-path "blog.org")))))
         ("i" . "Improvements")
         ("il" "Learn" tags "CATEGORY=\"learn\""
-         ((org-agenda-files (list (my/org-path "improvements.org")))))
+         ((org-agenda-files (list (keelerm/org-path "improvements.org")))))
         ("ir" "Read" tags "CATEGORY=\"read\""
-         ((org-agenda-files (list (my/org-path "improvements.org")))))
+         ((org-agenda-files (list (keelerm/org-path "improvements.org")))))
         ("iw" "Watch" tags "CATEGORY=\"watch\""
-         ((org-agenda-files (list (my/org-path "improvements.org")))))
+         ((org-agenda-files (list (keelerm/org-path "improvements.org")))))
         ("ia" "All Agenda" ((agenda "" nil))
-         ((org-agenda-files (list (my/org-path "improvements.org")))))
+         ((org-agenda-files (list (keelerm/org-path "improvements.org")))))
         ("is" "Search specific tag" ((agenda "" nil) (tags))
-         ((org-agenda-files (list (my/org-path "improvements.org")))))))
+         ((org-agenda-files (list (keelerm/org-path "improvements.org")))))))
 
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline (my/org-path "refile.org") "Tasks")
+      '(("t" "Todo" entry (file+headline (keelerm/org-path "refile.org") "Tasks")
          "* TODO %?")
-        ("b" "Blog Ideas" entry (file (my/org-path "blog.org"))
+        ("b" "Blog Ideas" entry (file (keelerm/org-path "blog.org"))
          "* TODO %?")
-        ("i" "Improvement" entry (file (my/org-path "improvements.org"))
+        ("i" "Improvement" entry (file (keelerm/org-path "improvements.org"))
          "* TODO %?%^g%^{CATEGORY}p")))
 
 ; Use IDO for both buffer and file completion and ido-everywhere to t

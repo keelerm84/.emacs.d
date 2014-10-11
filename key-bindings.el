@@ -108,7 +108,7 @@
    (?i . "~/.emacs.d/init.el")
    (?l . "~/Documents/Dropbox/personal.ledger")
    (?o . ,org-directory)
-   (?t . ,(my/org-path "Tortugas"))))
+   (?t . ,(keelerm/org-path "Tortugas"))))
 
 (provide 'key-bindings)
 

@@ -1,4 +1,4 @@
-(defun my/org-should-include-current (level)
+(defun keelerm/org-should-include-current (level)
   (progn
     (if (and
          (outline-on-heading-p)
@@ -7,46 +7,46 @@
         t
       nil)))
 
-(defun my/org-get-current-header ()
+(defun keelerm/org-get-current-header ()
   (progn
     (setq beg (point))
     (outline-end-of-heading)
     (buffer-substring-no-properties beg (point))))
 
-(defun my/org-outline-headings-to-list (level)
+(defun keelerm/org-outline-headings-to-list (level)
   (setq headings '())
   (show-all)
   (goto-char (point-min))
 
-  (if (my/org-should-include-current level)
-      (add-to-list 'headings (my/org-get-current-header) t))
+  (if (keelerm/org-should-include-current level)
+      (add-to-list 'headings (keelerm/org-get-current-header) t))
 
   (while (outline-next-heading)
-    (if (my/org-should-include-current level)
-        (add-to-list 'headings (my/org-get-current-header) t)))
+    (if (keelerm/org-should-include-current level)
+        (add-to-list 'headings (keelerm/org-get-current-header) t)))
   headings)
 
-(defun my/org-find-previous-workday (initial)
+(defun keelerm/org-find-previous-workday (initial)
   (let* ((time (time-subtract initial (seconds-to-time 86400)))
          (workdays '("Monday" "Tuesday" "Wednesday" "Thursday" "Friday")))
     (while (not (member (format-time-string "%A" time) workdays))
       (setq time (time-subtract time (seconds-to-time 86400))))
     time))
 
-(defun my/org-format-journal-file-name (time)
+(defun keelerm/org-format-journal-file-name (time)
   (concat org-journal-dir (format-time-string "%Y%m%d" time)))
 
-(defun my/org-find-previous-journal-file ()
-  (let* ((previous-day (my/org-find-previous-workday (current-time))))
-    (while (not (file-exists-p (my/org-format-journal-file-name previous-day)))
-      (setq previous-day (my/org-find-previous-workday previous-day)))
-    (my/org-format-journal-file-name previous-day)))
+(defun keelerm/org-find-previous-journal-file ()
+  (let* ((previous-day (keelerm/org-find-previous-workday (current-time))))
+    (while (not (file-exists-p (keelerm/org-format-journal-file-name previous-day)))
+      (setq previous-day (keelerm/org-find-previous-workday previous-day)))
+    (keelerm/org-format-journal-file-name previous-day)))
 
-(defun my/org-outline-create-scrum-message ()
+(defun keelerm/org-outline-create-scrum-message ()
   (interactive)
-  (setq journal-file (my/org-find-previous-journal-file))
+  (setq journal-file (keelerm/org-find-previous-journal-file))
   (switch-to-buffer (find-file-noselect journal-file))
-  (setq headings (my/org-outline-headings-to-list 2))
+  (setq headings (keelerm/org-outline-headings-to-list 2))
   (switch-to-buffer "*daily scrum*")
   (erase-buffer)
   (insert "* Previously\n")
