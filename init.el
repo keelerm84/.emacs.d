@@ -40,6 +40,7 @@
   (packages-install
    '(
      ace-jump-mode
+     ace-jump-zap
      ace-window
      ack-and-a-half
      auctex

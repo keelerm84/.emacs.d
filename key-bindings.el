@@ -95,6 +95,8 @@
 (key-chord-define-global "jc" 'ace-jump-char-mode)
 (key-chord-define-global "jl" 'ace-jump-line-mode)
 (key-chord-define-global "jf" 'ace-window)
+(key-chord-define-global "df" 'ace-jump-zap-to-char)
+(key-chord-define-global "dt" 'ace-jump-zap-up-to-char)
 
 (global-set-key (kbd "C-h C-m") 'discover-my-major)
 
