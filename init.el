@@ -79,7 +79,6 @@
      ledger-mode
      less-css-mode
      magit
-     molokai-theme
      multiple-cursors
      neotree
      org
@@ -97,7 +96,6 @@
      scala-mode2
      scss-mode
      smartscan
-     solarized-theme
      surround
      twittering-mode
      web-mode
