@@ -27,8 +27,8 @@
 (global-set-key (kbd "M-z") 'zap-up-to-char)
 (global-set-key (kbd "M-Z") 'zap-to-char)
 (global-set-key (kbd "C-c d") 'duplicate-line)
-(global-set-key (kbd "M-w") 'my-kill-ring-save)
-(global-set-key (kbd "C-w") 'my-kill-region)
+(global-set-key (kbd "M-w") 'keelerm/kill-ring-save)
+(global-set-key (kbd "C-w") 'keelerm/kill-region)
 
 (global-set-key (kbd "C-x r t") 'set-rectangular-region-anchor)
 (global-set-key (kbd "C-c f j") 'format-json)
@@ -105,6 +105,7 @@
 (key-chord-define-global "df" 'ace-jump-zap-to-char)
 (key-chord-define-global "dt" 'ace-jump-zap-up-to-char)
 
+(key-chord-define-global "mx" 'helm-M-x)
 (global-set-key (kbd "C-h C-m") 'discover-my-major)
 
 ;;; Prime jump-to-register with commonly accessed files

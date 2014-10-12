@@ -32,10 +32,10 @@ BEG and END (region to sort)."
       (list (region-beginning) (region-end))
     (list (line-beginning-position) (line-beginning-position 2))))
 
-(defun my-kill-ring-save (beg end)
+(defun keelerm/kill-ring-save (beg end)
   (interactive (region-or-line))
   (kill-ring-save beg end))
 
-(defun my-kill-region (beg end)
+(defun keelerm/kill-region (beg end)
   (interactive (region-or-line))
   (kill-region beg end))
