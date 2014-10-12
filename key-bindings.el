@@ -9,6 +9,11 @@
 (global-set-key (kbd "C-c w j") 'ace-window)
 (global-set-key (kbd "C-c w d") 'toggle-window-dedicated)
 
+;; Convenient toggle bindings
+(global-set-key (kbd "C-c t s s") 'smartscan-mode)
+(global-set-key (kbd "C-c t l n") 'linum-mode)
+(global-set-key (kbd "C-c t l l") 'toggle-truncate-lines)
+
 ;; Expand region
 (global-set-key (kbd "M-=") 'er/expand-region)
 (global-set-key (kbd "M-/") 'hippie-expand)
