@@ -66,6 +66,7 @@
 (global-set-key (kbd "C-c g d s") 'magit-diff-staged)
 (global-set-key (kbd "C-c g d u") 'magit-diff-unstaged)
 (global-set-key (kbd "C-c g s c") 'magit-show-commit)
+(global-set-key (kbd "C-c g u") 'git-gutter:update-all-windows)
 
 (global-set-key (kbd "C-x e") 'eshell)
 (global-set-key (kbd "C-c q") 'auto-fill-mode)
