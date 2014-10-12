@@ -13,6 +13,7 @@
 (global-set-key (kbd "C-c t s s") 'smartscan-mode)
 (global-set-key (kbd "C-c t l n") 'linum-mode)
 (global-set-key (kbd "C-c t l l") 'toggle-truncate-lines)
+(global-set-key (kbd "C-c t e m") 'evil-mode)
 
 ;; Expand region
 (global-set-key (kbd "M-=") 'er/expand-region)
