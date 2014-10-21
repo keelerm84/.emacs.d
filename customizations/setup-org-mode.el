@@ -2,7 +2,6 @@
 
 ; Make sure the code in begin_src blocks is colorized both when
 ; editing and when exporting.
-(require 'org-latex)
 (setq org-latex-pdf-process '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
 (setq org-latex-listings 'minted)
 (add-to-list 'org-latex-packages-alist '("" "minted"))
