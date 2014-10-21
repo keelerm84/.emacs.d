@@ -68,8 +68,18 @@
 (global-set-key (kbd "C-c g s c") 'magit-show-commit)
 (global-set-key (kbd "C-c g u") 'git-gutter:update-all-windows)
 
-(global-set-key (kbd "C-x e") 'eshell)
 (global-set-key (kbd "C-c q") 'auto-fill-mode)
+
+;; Shell goodness
+(global-set-key (kbd "C-x e") 'eshell)
+(add-hook 'eshell-mode-hook
+          #'(lambda ()
+              (define-key eshell-mode-map (kbd "C-c C-l") 'helm-eshell-history)))
+
+(global-set-key (kbd "C-x t") 'shell)
+(add-hook 'shell-mode-hook
+          #'(lambda ()
+              (define-key shell-mode-map (kbd "C-c C-l") 'helm-comint-input-ring)))
 
 ;; Org Mode
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
