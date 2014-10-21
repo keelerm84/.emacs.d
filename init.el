@@ -9,6 +9,7 @@
 (setq dotfiles-dir (file-name-directory
                     (or (buffer-file-name) load-file-name)))
 (setq site-lisp-dir (expand-file-name "site-lisp" dotfiles-dir))
+(setq misc-dir (expand-file-name "misc" dotfiles-dir))
 
 (setq customizations (expand-file-name "customizations" dotfiles-dir))
 
@@ -32,7 +33,7 @@
 (setq backup-directory-alist `(("." . ,(expand-file-name
                                         (concat dotfiles-dir "backups")))))
 
-(add-to-list 'load-path dotfiles-dir)
+(add-to-list 'load-path misc-dir)
 (add-to-list 'load-path customizations)
 
 (require 'setup-package)
