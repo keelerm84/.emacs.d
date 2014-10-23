@@ -93,6 +93,7 @@
      projectile
      projectile-rails
      puppet-mode
+     rust-mode
      sbt-mode
      scala-mode2
      scss-mode
