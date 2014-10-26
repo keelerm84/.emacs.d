@@ -102,6 +102,7 @@
      twittering-mode
      web-mode
      windresize
+     yasnippet
      zenburn-theme
      )))
 
@@ -124,7 +125,6 @@
 
 ;; el-get installations
 (el-get-install 'yaml-mode)
-(el-get-install 'yasnippet)
 (el-get-install 'markdown-mode)
 
 (when (memq window-system '(mac ns))
