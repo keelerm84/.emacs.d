@@ -73,6 +73,8 @@
      helm-projectile
      ido-ubiquitous
      jade-mode
+     jedi
+     jedi-direx
      js2-mode
      js2-refactor
      json-mode
