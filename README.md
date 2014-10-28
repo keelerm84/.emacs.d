@@ -31,3 +31,11 @@ Scala integration requires a couple of tools.  Obviously, you must install
 scala and sbt, but also the
 [ensime-sbt-cmd](https://github.com/aemoncannon/ensime-sbt-cmd) plugin.  Follow
 the documentation in the github README for installation details.
+
+The Jedi program requires a couple of manual steps.  virtualenv must be
+manually installed.  Once jedi.el has been installed, you must execute the
+command
+
+    jedi:install-server
+
+
