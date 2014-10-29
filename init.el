@@ -102,6 +102,7 @@
      smartscan
      surround
      twittering-mode
+     use-package
      web-mode
      windresize
      yasnippet
