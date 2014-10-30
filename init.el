@@ -63,10 +63,8 @@
      feature-mode
      floobits
      gist
-     git-timemachine
      flycheck
      flx-ido
-     git-gutter
      ggtags
      helm
      helm-css-scss
@@ -81,7 +79,6 @@
      key-chord
      ledger-mode
      less-css-mode
-     magit
      multiple-cursors
      neotree
      org
@@ -134,6 +131,7 @@
   (setq mac-command-modifier 'meta)
   (exec-path-from-shell-initialize))
 
+(require 'use-package)
 (require 'helm)
 (require 'appearance)
 (require 'auto-complete)
@@ -160,9 +158,11 @@
 (require 'gist)
 (require 'vc-git)
 
+;;; use-package files.  We are going to individually require these for now.
+(require 'dvcs)
+
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'ido '(require 'setup-ido))
-(eval-after-load 'magit '(require 'setup-magit))
 (eval-after-load 'js2-mode '(require 'setup-js2-mode))
 (eval-after-load 'dired '(require 'setup-dired))
 (eval-after-load 'csharp-mode '(require 'setup-csharp))

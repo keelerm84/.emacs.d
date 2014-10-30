@@ -51,23 +51,6 @@
 
 ;; Modes
 
-;; Git
-(global-set-key (kbd "C-c g m") 'magit-status)
-(global-set-key (kbd "C-c g n") 'git-gutter:next-hunk)
-(global-set-key (kbd "C-c g p") 'git-gutter:previous-hunk)
-(global-set-key (kbd "C-c g P") 'git-gutter:popup-hunk)
-(global-set-key (kbd "C-c g s h") 'git-gutter:stage-hunk)
-(global-set-key (kbd "C-c g r") 'git-gutter:revert-hunk)
-(global-set-key (kbd "C-c g t m") 'git-timemachine)
-(global-set-key (kbd "C-c g g") 'vc-git-grep)
-(global-set-key (kbd "C-c g l l") 'magit-log)
-(global-set-key (kbd "C-c g f l") 'magit-file-log)
-(global-set-key (kbd "C-c g d w") 'magit-diff-working-tree)
-(global-set-key (kbd "C-c g d s") 'magit-diff-staged)
-(global-set-key (kbd "C-c g d u") 'magit-diff-unstaged)
-(global-set-key (kbd "C-c g s c") 'magit-show-commit)
-(global-set-key (kbd "C-c g u") 'git-gutter:update-all-windows)
-
 (global-set-key (kbd "C-c q") 'auto-fill-mode)
 
 ;; Shell goodness
