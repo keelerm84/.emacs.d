@@ -1,11 +1,6 @@
-;; Window controls
-(global-set-key (kbd "C-c h") 'windmove-left)
-(global-set-key (kbd "C-c j") 'windmove-down)
-(global-set-key (kbd "C-c k") 'windmove-up)
-(global-set-key (kbd "C-c l") 'windmove-right)
+;; ;; Window controls
 (global-set-key (kbd "C-c |") 'toggle-window-split)
 
-(global-set-key (kbd "C-c w r") 'windresize)
 (global-set-key (kbd "C-c w j") 'ace-window)
 (global-set-key (kbd "C-c w d") 'toggle-window-dedicated)
 

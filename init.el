@@ -101,7 +101,6 @@
      twittering-mode
      use-package
      web-mode
-     windresize
      yasnippet
      zenburn-theme
      )))
@@ -151,7 +150,6 @@
 (require 'surround)
 (require 'feature-mode)
 (require 'dirtree)
-(require 'windresize)
 (require 'key-chord)
 (require 'neotree)
 (require 'ledger-mode)
@@ -160,6 +158,7 @@
 
 ;;; use-package files.  We are going to individually require these for now.
 (require 'dvcs)
+(require 'window)
 
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'ido '(require 'setup-ido))
