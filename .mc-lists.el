@@ -22,6 +22,7 @@
         indent-for-tab-command
         indent-new-comment-line
         kill-region
+        kmacro-end-macro
         markdown-exdent-or-delete
         my-kill-region
         org-beginning-of-line
@@ -36,6 +37,7 @@
         paredit-forward-kill-word
         paredit-forward-slurp-sexp
         paredit-open-round
+        paredit-splice-sexp
         python-backspace
         python-indent-dedent-line-backspace
         rectangle-number-lines
