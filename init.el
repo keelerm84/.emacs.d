@@ -55,7 +55,6 @@
      dired-details
      dirtree
      discover-my-major
-     emms
      ensime
      exec-path-from-shell
      expand-region
@@ -134,9 +133,6 @@
 (require 'helm)
 (require 'appearance)
 (require 'auto-complete)
-(require 'emms-setup)
-(emms-standard)
-(emms-default-players)
 (require 'ggtags)
 (require 'behavior)
 (require 'ido)
@@ -159,6 +155,7 @@
 ;;; use-package files.  We are going to individually require these for now.
 (require 'dvcs)
 (require 'window)
+(require 'emms)
 
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'ido '(require 'setup-ido))
