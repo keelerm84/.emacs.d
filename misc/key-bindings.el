@@ -93,5 +93,3 @@
    (?t . ,(keelerm/org-path "Tortugas"))))
 
 (provide 'key-bindings)
-
-org-directory
