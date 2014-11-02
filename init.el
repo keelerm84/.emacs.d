@@ -78,7 +78,6 @@
      key-chord
      ledger-mode
      less-css-mode
-     multiple-cursors
      neotree
      org
      org2blog
@@ -156,6 +155,7 @@
 (require 'dvcs)
 (require 'window)
 (require 'emms)
+(require 'multiple-cursors)
 
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'ido '(require 'setup-ido))

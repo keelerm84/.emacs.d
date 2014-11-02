@@ -1,4 +1,4 @@
-;; ;; Window controls
+;; Window controls
 (global-set-key (kbd "C-c |") 'toggle-window-split)
 
 (global-set-key (kbd "C-c w j") 'ace-window)
@@ -27,12 +27,6 @@
 
 (global-set-key (kbd "C-x r t") 'set-rectangular-region-anchor)
 (global-set-key (kbd "C-c f j") 'format-json)
-
-;; Multiple cursors
-(global-set-key (kbd "C-c m p") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c m n") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-c m a") 'mc/mark-all-like-this)
-(global-set-key (kbd "C-c m l") 'mc/edit-lines)
 
 ;; Buffer manipulation
 (global-set-key (kbd "C-c n") 'cleanup-buffer)
