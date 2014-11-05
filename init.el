@@ -65,6 +65,7 @@
      flycheck
      flx-ido
      ggtags
+     go-mode
      helm
      helm-css-scss
      helm-projectile
