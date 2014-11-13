@@ -5,4 +5,4 @@
          ("C-c m a" . mc/mark-all-like-this)
          ("C-c m l" . mc/edit-lines)))
 
-(provide 'multiple-cursors)
+(provide 'mc)

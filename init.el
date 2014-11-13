@@ -155,8 +155,8 @@
 ;;; use-package files.  We are going to individually require these for now.
 (require 'dvcs)
 (require 'window)
-(require 'multiple-cursors)
 (require 'media)
+(require 'mc)
 
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'ido '(require 'setup-ido))
