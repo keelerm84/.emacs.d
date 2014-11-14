@@ -52,6 +52,7 @@
      clojure-mode
      clojure-test-mode
      csharp-mode
+     debbugs
      dired-details
      dirtree
      discover-my-major
