@@ -66,6 +66,7 @@
      flycheck
      flx-ido
      ggtags
+     github-clone
      go-mode
      helm
      helm-css-scss
