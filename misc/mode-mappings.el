@@ -19,5 +19,6 @@
 (add-to-list 'auto-mode-alist '("\\.ledger$" . ledger-mode))
 
 (add-to-list 'auto-mode-alist '("\\.zsh$" . shell-script-mode))
+(add-to-list 'auto-mode-alist '("\\.gitconfig$" . gitconfig-mode))
 
 (provide 'mode-mappings)

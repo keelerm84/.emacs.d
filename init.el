@@ -66,6 +66,7 @@
      flycheck
      flx-ido
      ggtags
+     gitconfig-mode
      github-clone
      go-mode
      helm
