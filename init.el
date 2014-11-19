@@ -86,6 +86,7 @@
      org
      org2blog
      org-journal
+     pandoc-mode
      paredit
      php-auto-yasnippets
      php-extras
