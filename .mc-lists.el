@@ -31,6 +31,7 @@
         org-force-self-insert
         org-kill-line
         org-self-insert-command
+        org-yank
         orgtbl-self-insert-command
         paredit-forward
         paredit-forward-delete
