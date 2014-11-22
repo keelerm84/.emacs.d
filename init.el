@@ -130,8 +130,10 @@
 (el-get-install 'markdown-mode)
 
 (when (memq window-system '(mac ns))
-  (setq mac-command-modifier 'meta)
-  (exec-path-from-shell-initialize))
+  (setq mac-command-modifier 'meta))
+
+(require 'exec-path-from-shell)
+(exec-path-from-shell-initialize)
 
 (require 'use-package)
 (require 'helm)
