@@ -68,6 +68,7 @@
      ggtags
      gitconfig-mode
      github-clone
+     go-autocomplete
      go-mode
      helm
      helm-css-scss
@@ -133,6 +134,7 @@
   (setq mac-command-modifier 'meta))
 
 (require 'exec-path-from-shell)
+(add-to-list 'exec-path-from-shell-variables "GOPATH")
 (exec-path-from-shell-initialize)
 
 (require 'use-package)
@@ -183,6 +185,7 @@
 (eval-after-load 'cider-mode '(require 'setup-cider))
 (eval-after-load 'projectile '(require 'setup-projectile))
 (eval-after-load 'ledger-mode '(require 'setup-ledger))
+(eval-after-load 'go-mode '(require 'setup-go))
 
 (setq user-full-name "Matthew M. Keeler")
 (setq user-mail-address "keelerm84@gmail.com")

@@ -38,4 +38,15 @@ command
 
     jedi:install-server
 
+#### Golang
 
+After setting your GOPATH and PATH variables as appropriate, there are a few
+packages that need to be installed to use the full power of my go
+configuration.
+
+In order to jump to definitions or to describe go objects, you must have godef
+installed.
+
+    go get code.google.com/p/rog-go/exp/cmd/godef
+    go get -u github.com/nsf/gocode
+    go get -u github.com/dougm/goflymake
