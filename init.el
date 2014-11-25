@@ -83,6 +83,7 @@
      key-chord
      ledger-mode
      less-css-mode
+     linum-relative
      neotree
      org
      org2blog
@@ -165,6 +166,7 @@
 (require 'window)
 (require 'media)
 (require 'mc)
+(require 'linum-relative)
 
 (eval-after-load 'auto-complete '(require 'setup-auto-complete))
 (eval-after-load 'ido '(require 'setup-ido))
