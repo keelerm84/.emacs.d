@@ -7,6 +7,7 @@
 ;; Convenient toggle bindings
 (global-set-key (kbd "C-c t s s") 'smartscan-mode)
 (global-set-key (kbd "C-c t l n") 'linum-mode)
+(global-set-key (kbd "C-c t r n") 'linum-relative-toggle)
 (global-set-key (kbd "C-c t l l") 'toggle-truncate-lines)
 (global-set-key (kbd "C-c t e m") 'evil-mode)
 (global-set-key (kbd "C-c t z") 'toggle-window-zoom)
