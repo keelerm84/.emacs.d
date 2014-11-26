@@ -57,6 +57,7 @@
      dirtree
      discover-my-major
      ensime
+     eredis
      exec-path-from-shell
      expand-region
      evil
