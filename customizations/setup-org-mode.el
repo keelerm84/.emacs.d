@@ -82,12 +82,6 @@
         ("i" "Improvement" entry (file (keelerm/org-path "improvements.org"))
          "* TODO %?%^g%^{CATEGORY}p")))
 
-; Use IDO for both buffer and file completion and ido-everywhere to t
-(setq org-completion-use-ido t)
-(setq ido-everywhere t)
-(setq ido-max-directory-size 100000)
-(ido-mode (quote both))
-
 (set-face-foreground 'org-level-5 "aquamarine4")
 
 ;;;; Refile settings
