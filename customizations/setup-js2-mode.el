@@ -1,5 +1,5 @@
 (setq-default js2-basic-offset 2)
-(setq-default js2-bounce-indent-p t)
+(setq-default js2-bounce-indent-p nil)
 (setq-default js2-global-externs '("module" "require" "assert" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON"))
 
 ;; js2-mode steals TAB, let's steal it back for yasnippet
