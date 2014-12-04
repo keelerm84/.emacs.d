@@ -37,6 +37,7 @@
 ;; Global hooks
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (setq flycheck-indication-mode 'right-fringe)
+(setq flycheck-checker-error-threshold nil)
 
 ;; Text mode hooks
 (add-hook 'text-mode-hook 'flyspell-mode)
