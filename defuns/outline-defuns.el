@@ -52,6 +52,5 @@
   (insert "* Previously\n")
   (mapcar (lambda(element)
             (insert (replace-regexp-in-string "^** ..... " "  - " element) "\n")) headings)
-  (insert "\n* Today\n  - ")
   (org-mode)
   (show-all))
