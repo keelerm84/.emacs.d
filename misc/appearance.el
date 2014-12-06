@@ -14,4 +14,6 @@
             ;; invisible here anyway.
             (assq-delete-all 'which-func-mode mode-line-misc-info))
 
+(setq zoom-window-mode-line-color "#2B2B2B")
+
 (provide 'appearance)

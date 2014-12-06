@@ -109,6 +109,7 @@
      web-mode
      yasnippet
      zenburn-theme
+     zoom-window
      )))
 
 (condition-case nil
@@ -161,6 +162,7 @@
 (require 'ledger-mode)
 (require 'gist)
 (require 'vc-git)
+(require 'zoom-window)
 
 ;;; use-package files.  We are going to individually require these for now.
 (require 'dvcs)
