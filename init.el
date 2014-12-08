@@ -104,6 +104,7 @@
      scss-mode
      smartscan
      surround
+     tdd
      twittering-mode
      use-package
      web-mode
@@ -163,6 +164,7 @@
 (require 'gist)
 (require 'vc-git)
 (require 'zoom-window)
+(require 'tdd)
 
 ;;; use-package files.  We are going to individually require these for now.
 (require 'dvcs)
