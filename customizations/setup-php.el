@@ -9,6 +9,7 @@
 
 (add-hook 'php-mode-hook (lambda ()
                            (c-set-style "psr2")
-                           (php-refactor-mode t)))
+                           (php-refactor-mode t)
+                           (set (make-local-variable 'compile-command) "phpunit")))
 
 (provide 'setup-php)
