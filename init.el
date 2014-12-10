@@ -98,6 +98,7 @@
      projectile
      projectile-rails
      puppet-mode
+     restclient
      rust-mode
      sbt-mode
      scala-mode2
@@ -165,6 +166,7 @@
 (require 'vc-git)
 (require 'zoom-window)
 (require 'tdd)
+(require 'restclient)
 
 ;;; use-package files.  We are going to individually require these for now.
 (require 'dvcs)
