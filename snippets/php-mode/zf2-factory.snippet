@@ -1,0 +1,21 @@
+# name : zf2-factory
+# key : fact
+# --
+<?php
+
+namespace $1;
+
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
+
+class ${2:ClassName}Factory implements FactoryInterface
+{
+    /**
+     * @param  ServiceLocatorInterface $serviceLocator Zend's DIC object
+     * @return $2
+     */
+    public function createService(ServiceLocatorInterface $serviceLocator)
+    {
+        return new $2($0);
+    }
+}
