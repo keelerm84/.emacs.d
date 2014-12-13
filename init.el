@@ -74,6 +74,7 @@
      helm
      helm-css-scss
      helm-projectile
+     helm-swoop
      ido-ubiquitous
      jade-mode
      jedi
