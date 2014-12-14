@@ -58,7 +58,10 @@
          ("C-c g P" . git-gutter:popup-hunk)
          ("C-c g s h" . git-gutter:stage-hunk)
          ("C-c g r" . git-gutter:revert-hunk)
-         ("C-c g u" . git-gutter:update-all-windows)))
+         ("C-c g u" . git-gutter:update-all-windows))
+  :config
+  (progn
+    (diminish 'git-gutter-mode)))
 
 (use-package vc-git
   :bind ("C-c g g" . vc-git-grep))

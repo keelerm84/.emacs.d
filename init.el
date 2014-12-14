@@ -53,6 +53,7 @@
      clojure-test-mode
      csharp-mode
      debbugs
+     diminish
      dired-details
      dirtree
      discover-my-major
@@ -168,6 +169,7 @@
 (require 'zoom-window)
 (require 'tdd)
 (require 'restclient)
+(require 'diminish)
 
 ;;; use-package files.  We are going to individually require these for now.
 (require 'dvcs)

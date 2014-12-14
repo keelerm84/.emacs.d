@@ -17,4 +17,6 @@
 (set-face-foreground 'helm-swoop-target-line-block-face (face-foreground 'highlight))
 (set-face-background 'helm-swoop-target-line-block-face (face-background 'highlight))
 
+(diminish 'helm-mode)
+
 (provide 'setup-helm)
