@@ -107,6 +107,7 @@
      scss-mode
      smartscan
      surround
+     sx
      tdd
      twittering-mode
      use-package
@@ -169,6 +170,7 @@
 (require 'zoom-window)
 (require 'tdd)
 (require 'restclient)
+(require 'sx-load)
 (require 'diminish)
 
 ;;; use-package files.  We are going to individually require these for now.
