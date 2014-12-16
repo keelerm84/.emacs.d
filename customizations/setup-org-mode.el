@@ -36,6 +36,10 @@
 
 (setq org-agenda-files (list org-directory (keelerm/org-path "Tortugas")))
 (setq org-default-notes-file (keelerm/org-path "refile.org"))
+(setq org-agenda-skip-scheduled-if-deadline-is-shown t)
+(setq org-deadline-warning-days 7)
+(setq org-agenda-skip-deadline-if-done t)
+(setq org-agenda-skip-scheduled-if-done t)
 
 ; Targets include this file and any file contributing to the agenda - up to 9 levels deep
 (setq org-refile-targets (quote ((nil :maxlevel . 9)
