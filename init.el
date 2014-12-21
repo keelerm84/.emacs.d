@@ -6,20 +6,13 @@
   (setenv "PATH" (concat "/opt/local/bin:/usr/local/bin:" (getenv "PATH")))
   (push "/usr/local/bin" exec-path))
 
-(setq dotfiles-dir (file-name-directory
+(defvar dotfiles-dir (file-name-directory
                     (or (buffer-file-name) load-file-name)))
-(setq site-lisp-dir (expand-file-name "site-lisp" dotfiles-dir))
-(setq misc-dir (expand-file-name "misc" dotfiles-dir))
+(defvar misc-dir (expand-file-name "misc" dotfiles-dir))
+(defvar customizations (expand-file-name "customizations" dotfiles-dir))
+(defvar org-directory "~/Documents/Dropbox/OrgFiles/")
 
-(setq customizations (expand-file-name "customizations" dotfiles-dir))
-
-(setq org-directory "~/Documents/Dropbox/OrgFiles/")
-
-(dolist (project (directory-files site-lisp-dir t "\\w+"))
-  (when (file-directory-p project)
-    (add-to-list 'load-path project)))
-
-(setq defuns-dir (expand-file-name "defuns" dotfiles-dir))
+(defvar defuns-dir (expand-file-name "defuns" dotfiles-dir))
 (dolist (file (directory-files defuns-dir t "\\w+"))
   (when (file-regular-p file)
     (load file)))
@@ -36,107 +29,8 @@
 (add-to-list 'load-path misc-dir)
 (add-to-list 'load-path customizations)
 
-(require 'setup-package)
-(defun init--install-packages()
-  (packages-install
-   '(
-     ace-jump-mode
-     ace-jump-zap
-     ace-window
-     ack-and-a-half
-     auctex
-     auto-complete
-     cider
-     change-inner
-     cl-lib
-     clojure-mode
-     clojure-test-mode
-     csharp-mode
-     debbugs
-     diminish
-     dired-details
-     dirtree
-     discover-my-major
-     ensime
-     eredis
-     exec-path-from-shell
-     expand-region
-     evil
-     feature-mode
-     floobits
-     gist
-     flycheck
-     flx-ido
-     ggtags
-     gitconfig-mode
-     github-clone
-     go-autocomplete
-     go-mode
-     helm
-     helm-css-scss
-     helm-projectile
-     helm-swoop
-     ido-ubiquitous
-     jade-mode
-     jedi
-     jedi-direx
-     js2-mode
-     js2-refactor
-     json-mode
-     key-chord
-     ledger-mode
-     less-css-mode
-     linum-relative
-     neotree
-     org
-     org2blog
-     org-journal
-     pandoc-mode
-     paredit
-     php-auto-yasnippets
-     php-extras
-     php-mode
-     php-refactor-mode
-     projectile
-     projectile-rails
-     puppet-mode
-     restclient
-     rust-mode
-     sbt-mode
-     scala-mode2
-     scss-mode
-     smartscan
-     surround
-     sx
-     tdd
-     twittering-mode
-     use-package
-     web-mode
-     yasnippet
-     zenburn-theme
-     zoom-window
-     )))
-
-(condition-case nil
-    (init--install-packages)
-  (error
-   (package-refresh-contents)
-   (init--install-packages)))
-
-;; el-get setup
-(add-to-list 'load-path (expand-file-name "el-get/el-get/" dotfiles-dir))
-(unless (require 'el-get nil 'noerror)
-  (with-current-buffer
-      (url-retrieve-synchronously
-       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
-    (goto-char (point-max))
-    (eval-print-last-sexp)))
-
-(el-get 'sync)
-
-;; el-get installations
-(el-get-install 'yaml-mode)
-(el-get-install 'markdown-mode)
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
 
 (when (memq window-system '(mac ns))
   (setq mac-command-modifier 'meta))
@@ -145,6 +39,7 @@
 (add-to-list 'exec-path-from-shell-variables "GOPATH")
 (exec-path-from-shell-initialize)
 
+(require 'yasnippet)
 (require 'use-package)
 (require 'helm)
 (require 'appearance)
@@ -189,13 +84,11 @@
 (eval-after-load 'org '(require 'setup-org-mode))
 (eval-after-load 'yas '(require 'setup-yasnippet))
 (eval-after-load 'php-mode '(require 'setup-php))
-(eval-after-load 'org2blog-autoloads '(require 'setup-org2blog))
 (eval-after-load 'helm-mode '(require 'setup-helm))
 (eval-after-load 'scala-mode2 '(require 'setup-scala))
 (eval-after-load 'scss-mode '(require 'setup-css))
 (eval-after-load 'less-css-mode '(require 'setup-css))
 (eval-after-load 'css-mode '(require 'setup-css))
-(eval-after-load 'clojure-test-mode '(require 'setup-clojure-test))
 (eval-after-load 'cider-mode '(require 'setup-cider))
 (eval-after-load 'projectile '(require 'setup-projectile))
 (eval-after-load 'ledger-mode '(require 'setup-ledger))

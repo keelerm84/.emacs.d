@@ -2,12 +2,14 @@
 
 ## Setup
 
-First, clone the repository and update all required submodules
+In order to use this configuration, you must have
+[cask](https://github.com/cask/cask) installed.
+
+Clone the repository and update all required submodules
 
     git clone git://github.com/keelerm84/.emacs.d.git
     cd .emacs.d
-    git submodule init
-    git submodule update --recursive
+    cask install
 
 ### Dependencies
 

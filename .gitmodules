@@ -1,6 +1,0 @@
-[submodule "site-lisp/dash"]
-	path = site-lisp/dash
-	url = https://github.com/magnars/dash.el
-[submodule "site-lisp/change-inner"]
-	path = site-lisp/change-inner
-	url = https://github.com/emacsmirror/change-inner.git

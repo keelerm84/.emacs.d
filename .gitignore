@@ -19,3 +19,4 @@ emms/*
 /ac-comphist.dat
 /.python-environments/
 .sx
+/.cask/
