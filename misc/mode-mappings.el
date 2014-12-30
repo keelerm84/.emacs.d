@@ -22,4 +22,8 @@
 (add-to-list 'auto-mode-alist '("\\.zsh$" . shell-script-mode))
 (add-to-list 'auto-mode-alist '("\\.gitconfig$" . gitconfig-mode))
 
+(add-to-list 'auto-mode-alist '("\\.dist-production$" . php-mode))
+(add-to-list 'auto-mode-alist '("\\.dist-development$" . php-mode))
+(add-to-list 'auto-mode-alist '("\\.dist-staging$" . php-mode))
+
 (provide 'mode-mappings)
