@@ -80,4 +80,6 @@
 ;; Compilation
 (add-hook 'compilation-filter-hook 'colorize-compilation-buffer)
 
+(add-hook 'eshell-mode-hook '(lambda () (smartscan-mode 0)))
+
 (provide 'behavior)
