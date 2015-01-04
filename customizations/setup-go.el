@@ -5,6 +5,7 @@
                           (local-set-key (kbd "C-c i") 'go-goto-imports)
                           (local-set-key (kbd "M-.") 'godef-jump)
                           (go-eldoc-setup)
+                          (ggtags-mode 0)
                           (if (not (string-match "go" compile-command))
                               (set (make-local-variable 'compile-command)
                                    "go build -v && go test -v && go vet"))))
