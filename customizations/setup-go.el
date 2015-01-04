@@ -1,5 +1,7 @@
 (add-hook 'before-save-hook 'gofmt-before-save)
 
+(setq gofmt-command "goimports")
+
 (add-hook 'go-mode-hook (lambda ()
                           (local-set-key (kbd "C-c C-r") 'go-remove-unused-imports)
                           (local-set-key (kbd "C-c i") 'go-goto-imports)
