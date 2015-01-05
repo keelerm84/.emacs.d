@@ -66,6 +66,7 @@
 (depends-on "projectile-rails")
 (depends-on "puppet-mode")
 (depends-on "restclient")
+(depends-on "rvm")
 (depends-on "rust-mode")
 (depends-on "sbt-mode")
 (depends-on "scala-mode2")

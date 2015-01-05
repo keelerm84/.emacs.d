@@ -67,6 +67,8 @@
 (require 'restclient)
 (require 'sx-load)
 (require 'diminish)
+(require 'rvm)
+(rvm-use-default)
 
 ;;; use-package files.  We are going to individually require these for now.
 (require 'dvcs)
