@@ -17,7 +17,6 @@ In order to provide preview capabilities with the markdown plugin, you need to
 install a markdown converter.  For Fedora, you can install it with
 
     sudo yum install python-markdown2
-    sudo ln -s /usr/bin/markdown2 /usr/bin/markdown
 
 The use of the global tagging system requires the emacs-global extension.
 

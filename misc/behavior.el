@@ -82,4 +82,6 @@
 
 (add-hook 'eshell-mode-hook '(lambda () (smartscan-mode 0)))
 
+(setq markdown-command "markdown2")
+
 (provide 'behavior)
