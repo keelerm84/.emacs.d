@@ -20,3 +20,4 @@ emms/*
 /.python-environments/
 .sx
 /.cask/
+/ido.last
