@@ -106,3 +106,17 @@ Including indent-buffer, which should not be called automatically on save."
  (interactive)
  (if (window-minibuffer-p (selected-window))
     (keyboard-escape-quit)))
+(defun keelerm/vsplit-last-buffer (prefix)
+  "Split the window vertically and display the previous buffer."
+  (interactive "p")
+  (split-window-vertically)
+  (other-window 1 nil)
+  (unless prefix
+    (switch-to-next-buffer)))
+
+(defun keelerm/hsplit-last-buffer (prefix)
+  "Split the window horizontally and display the previous buffer."
+  (interactive "p")
+  (split-window-horizontally)
+  (other-window 1 nil)
+  (unless prefix (switch-to-next-buffer)))

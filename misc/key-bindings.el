@@ -1,8 +1,9 @@
 ;; Window controls
 (global-set-key (kbd "C-c |") 'toggle-window-split)
 
-(global-set-key (kbd "C-c w j") 'ace-window)
 (global-set-key (kbd "C-c w d") 'toggle-window-dedicated)
+(bind-key "C-x 2" 'keelerm/vsplit-last-buffer)
+(bind-key "C-x 3" 'keelerm/hsplit-last-buffer)
 
 ;; Convenient toggle bindings
 (global-set-key (kbd "C-c t s s") 'smartscan-mode)
