@@ -75,6 +75,8 @@
 
 (global-set-key (kbd "C-x C-f") 'find-file)
 
+(global-set-key (kbd "C-x o") 'ace-window)
+
 (key-chord-define-global "jw" 'ace-jump-mode)
 (key-chord-define-global "jc" 'ace-jump-char-mode)
 (key-chord-define-global "jl" 'ace-jump-line-mode)
