@@ -67,6 +67,8 @@
 (require 'restclient)
 (require 'sx-load)
 (require 'diminish)
+(require 'whole-line-or-region)
+(whole-line-or-region-mode t)
 (require 'rvm)
 (rvm-use-default)
 

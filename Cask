@@ -78,6 +78,7 @@
 (depends-on "twittering-mode")
 (depends-on "use-package")
 (depends-on "web-mode")
+(depends-on "whole-line-or-region")
 (depends-on "yaml-mode")
 (depends-on "yasnippet")
 (depends-on "zenburn-theme")
