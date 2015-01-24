@@ -37,7 +37,6 @@
 (global-set-key (kbd "C-c s b") 'create-scratch-buffer)
 (global-set-key (kbd "M-s") 'save-buffer)
 
-(global-set-key (kbd "C-x C-b") 'ibuffer)
 
 ;; Modes
 

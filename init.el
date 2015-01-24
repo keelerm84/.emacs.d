@@ -74,6 +74,7 @@
 (require 'fullframe)
 
 ;;; use-package files.  We are going to individually require these for now.
+(require 'buffers)
 (require 'dvcs)
 (require 'window)
 (require 'media)
