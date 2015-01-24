@@ -71,6 +71,7 @@
 (whole-line-or-region-mode t)
 (require 'rvm)
 (rvm-use-default)
+(require 'fullframe)
 
 ;;; use-package files.  We are going to individually require these for now.
 (require 'dvcs)

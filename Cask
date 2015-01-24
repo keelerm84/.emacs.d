@@ -30,6 +30,7 @@
 (depends-on "floobits")
 (depends-on "flx-ido")
 (depends-on "flycheck")
+(depends-on "fullframe")
 (depends-on "ggtags")
 (depends-on "gist")
 (depends-on "gitconfig-mode")
