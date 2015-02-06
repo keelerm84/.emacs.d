@@ -72,6 +72,10 @@
 (require 'rvm)
 (rvm-use-default)
 (require 'fullframe)
+(require 'sunshine)
+
+(setq sunshine-location "Cary, NC")
+(setq sunshine-show-icons t)
 
 ;;; use-package files.  We are going to individually require these for now.
 (require 'buffers)

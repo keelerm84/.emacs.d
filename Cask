@@ -74,6 +74,7 @@
 (depends-on "scala-mode2")
 (depends-on "scss-mode")
 (depends-on "smartscan")
+(depends-on "sunshine")
 (depends-on "surround")
 (depends-on "sx")
 (depends-on "tdd")
