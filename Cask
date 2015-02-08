@@ -38,6 +38,7 @@
 (depends-on "go-autocomplete")
 (depends-on "go-eldoc")
 (depends-on "go-mode")
+(depends-on "go-snippets")
 (depends-on "helm")
 (depends-on "helm-css-scss")
 (depends-on "helm-projectile")
