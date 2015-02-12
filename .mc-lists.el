@@ -44,6 +44,7 @@
         python-indent-dedent-line-backspace
         rectangle-number-lines
         sgml-slash
+        whole-line-or-region-yank
         yaml-electric-backspace
         zap-up-to-char
         ))
