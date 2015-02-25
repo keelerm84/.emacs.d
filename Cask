@@ -79,6 +79,7 @@
 (depends-on "surround")
 (depends-on "sx")
 (depends-on "tdd")
+(depends-on "typing")
 (depends-on "twittering-mode")
 (depends-on "use-package")
 (depends-on "web-mode")
