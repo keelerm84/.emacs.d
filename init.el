@@ -73,6 +73,10 @@
 (rvm-use-default)
 (require 'fullframe)
 (require 'sunshine)
+(require 'elfeed)
+
+(setq elfeed-feeds
+      '("http://xkcd.com/rss.xml"))
 
 (setq sunshine-location "Cary, NC")
 (setq sunshine-show-icons t)

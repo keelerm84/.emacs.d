@@ -40,6 +40,8 @@
 
 ;; Modes
 
+(global-set-key (kbd "C-x w") 'elfeed)
+
 (global-set-key (kbd "C-c q") 'auto-fill-mode)
 
 ;; Shell goodness

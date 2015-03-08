@@ -21,6 +21,7 @@
 (depends-on "dired-details")
 (depends-on "dirtree")
 (depends-on "discover-my-major")
+(depends-on "elfeed")
 (depends-on "ensime")
 (depends-on "eredis")
 (depends-on "evil")
