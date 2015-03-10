@@ -77,7 +77,8 @@
 
 (setq elfeed-feeds
       '(("http://xkcd.com/rss.xml" comics)
-        ("http://blog.golang.org/feeds/posts/default" go)))
+        ("http://blog.golang.org/feeds/posts/default" go)
+        ("http://planet.clojure.in/atom.xml" clojure)))
 
 (setq sunshine-location "Cary, NC")
 (setq sunshine-show-icons t)
