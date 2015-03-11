@@ -53,6 +53,7 @@
 (depends-on "js2-refactor")
 (depends-on "json-mode")
 (depends-on "key-chord")
+(depends-on "latex-preview-pane")
 (depends-on "ledger-mode")
 (depends-on "less-css-mode")
 (depends-on "linum-relative")
