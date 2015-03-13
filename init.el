@@ -78,7 +78,8 @@
 (setq elfeed-feeds
       '(("http://xkcd.com/rss.xml" comics)
         ("http://blog.golang.org/feeds/posts/default" go)
-        ("http://planet.clojure.in/atom.xml" clojure)))
+        ("http://planet.clojure.in/atom.xml" clojure)
+        ("http://endlessparentheses.com/atom.xml" emacs)))
 
 (setq sunshine-location "Cary, NC")
 (setq sunshine-show-icons t)
