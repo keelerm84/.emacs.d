@@ -4,6 +4,7 @@
 (source marmalade)
 
 (depends-on "cask")
+(depends-on "calfw")
 (depends-on "dash")
 (depends-on "s")
 (depends-on "ace-jump-mode")

@@ -73,6 +73,8 @@
 (rvm-use-default)
 (require 'fullframe)
 (require 'sunshine)
+(require 'calfw)
+(require 'calfw-org)
 (require 'elfeed)
 
 (setq elfeed-feeds
