@@ -63,6 +63,7 @@
 (depends-on "neotree")
 (depends-on "org")
 (depends-on "org-journal")
+(depends-on "org-present")
 (depends-on "ox-reveal")
 (depends-on "pandoc-mode")
 (depends-on "paredit")
