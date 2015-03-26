@@ -26,4 +26,6 @@
 (add-to-list 'auto-mode-alist '("\\.dist-development$" . php-mode))
 (add-to-list 'auto-mode-alist '("\\.dist-staging$" . php-mode))
 
+(add-to-list 'auto-mode-alist '("\\.restclient$" . restclient-mode))
+
 (provide 'mode-mappings)
