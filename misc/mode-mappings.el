@@ -1,4 +1,5 @@
 (autoload 'js2-mode "js2-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.h$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . json-mode))
 
