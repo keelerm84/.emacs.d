@@ -79,6 +79,7 @@
 
 (setq elfeed-feeds
       '(("http://xkcd.com/rss.xml" comics)
+        ("http://www.smbc-comics.com/rss.php" comics)
         ("http://blog.golang.org/feeds/posts/default" go)
         ("http://planet.clojure.in/atom.xml" clojure)
         ("http://endlessparentheses.com/atom.xml" emacs)))
