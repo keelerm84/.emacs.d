@@ -82,6 +82,7 @@
         ("http://www.smbc-comics.com/rss.php" comics)
         ("http://blog.golang.org/feeds/posts/default" go)
         ("http://planet.clojure.in/atom.xml" clojure)
+        ("http://esr.ibiblio.org/?feed=rss2" misc)
         ("http://endlessparentheses.com/atom.xml" emacs)))
 
 (setq sunshine-location "Cary, NC")
