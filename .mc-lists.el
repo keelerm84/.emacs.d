@@ -30,7 +30,10 @@
         org-end-of-line
         org-force-self-insert
         org-kill-line
+        org-return-indent
         org-self-insert-command
+        org-set-property
+        org-shiftmetadown
         org-yank
         orgtbl-self-insert-command
         paredit-forward
@@ -44,6 +47,7 @@
         python-indent-dedent-line-backspace
         rectangle-number-lines
         sgml-slash
+        whole-line-or-region-kill-region
         whole-line-or-region-kill-ring-save
         whole-line-or-region-yank
         yaml-electric-backspace
