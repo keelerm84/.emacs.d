@@ -88,6 +88,7 @@
 (depends-on "typing")
 (depends-on "twittering-mode")
 (depends-on "use-package")
+(depends-on "vimrc-mode")
 (depends-on "web-mode")
 (depends-on "whole-line-or-region")
 (depends-on "yaml-mode")
