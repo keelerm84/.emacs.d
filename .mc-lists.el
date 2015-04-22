@@ -40,6 +40,7 @@
         paredit-forward-delete
         paredit-forward-kill-word
         paredit-forward-slurp-sexp
+        paredit-kill
         paredit-open-round
         paredit-semicolon
         paredit-splice-sexp
