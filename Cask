@@ -84,6 +84,7 @@
 (depends-on "sunshine")
 (depends-on "surround")
 (depends-on "sx")
+(depends-on "systemd")
 (depends-on "tdd")
 (depends-on "typing")
 (depends-on "twittering-mode")
