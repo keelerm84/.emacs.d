@@ -1,5 +1,7 @@
 (use-package magit
   :ensure t
+  :init
+  (setq magit-last-seen-setup-instructions "1.4.0")
   :config
   (progn
     (fullframe magit-status magit-mode-quit-window)
