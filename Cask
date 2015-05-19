@@ -44,6 +44,7 @@
 (depends-on "helm")
 (depends-on "helm-css-scss")
 (depends-on "helm-projectile")
+(depends-on "helm-spotify")
 (depends-on "helm-swoop")
 (depends-on "htmlize")
 (depends-on "ibuffer-vc")
