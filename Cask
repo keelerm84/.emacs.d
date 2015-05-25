@@ -17,6 +17,7 @@
 (depends-on "clojure-mode")
 (depends-on "csharp-mode")
 (depends-on "debbugs")
+(depends-on "define-word")
 (depends-on "diminish")
 (depends-on "dired-details")
 (depends-on "dirtree")
