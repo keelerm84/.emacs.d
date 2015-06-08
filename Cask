@@ -82,6 +82,7 @@
 (depends-on "sbt-mode")
 (depends-on "scala-mode2")
 (depends-on "scss-mode")
+(depends-on "shrink-whitespace")
 (depends-on "smartscan")
 (depends-on "sunshine")
 (depends-on "surround")
