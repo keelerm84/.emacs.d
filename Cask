@@ -64,6 +64,7 @@
 (depends-on "markdown-mode")
 (depends-on "neotree")
 (depends-on "org")
+(depends-on "org-dashboard")
 (depends-on "org-journal")
 (depends-on "org-present")
 (depends-on "ox-reveal")
