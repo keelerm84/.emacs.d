@@ -146,6 +146,7 @@
     :global-prefix "C-SPC")
 
   (keelerm/leader-keys
+    "b" 'helm-buffers-list
     "w" 'save-buffer
     "v" 'keelerm/vsplit-last-buffer
     "h" 'keelerm/hsplit-last-buffer
@@ -176,6 +177,7 @@
   (define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)
   (define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
   (define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
+  (define-key evil-normal-state-map (kbd "z z") 'evil-save-modified-and-close)
 
   ;; Use visual line motions even outside of visual-line-mode buffers
   (evil-global-set-key 'motion "j" 'evil-next-visual-line)
@@ -345,8 +347,8 @@
   :hook (lsp-mode . keelerm/lsp-mode-setup)
   :init
   (setq lsp-keymap-prefix "C-c l")  ;; Or 'C-l', 's-l'
-  :config
   (lsp-install-server nil 'omnisharp)
+  :config
   (lsp-enable-which-key-integration t))
 
 (use-package lsp-ui
@@ -418,17 +420,3 @@
 
 ;; Make gc pauses faster by decreasing the threshold.
 (setq gc-cons-threshold (* 2 1000 1000))
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(helm-minibuffer-history-key "M-p")
- '(package-selected-packages
-   '(csharp-mode which-key visual-fill-column use-package projectile-rails no-littering lsp-ui lsp-treemacs helm-projectile general forge exec-path-from-shell evil-surround evil-collection doom-themes doom-modeline auto-package-update all-the-icons)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

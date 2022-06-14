@@ -218,6 +218,7 @@
 	:global-prefix "C-SPC")
 
       (keelerm/leader-keys
+	"b" 'helm-buffers-list
 	"w" 'save-buffer
 	"v" 'keelerm/vsplit-last-buffer
 	"h" 'keelerm/hsplit-last-buffer
@@ -248,6 +249,7 @@
       (define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)
       (define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
       (define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
+      (define-key evil-normal-state-map (kbd "z z") 'evil-save-modified-and-close)
 
       ;; Use visual line motions even outside of visual-line-mode buffers
       (evil-global-set-key 'motion "j" 'evil-next-visual-line)
@@ -500,8 +502,8 @@
 	 :hook (lsp-mode . keelerm/lsp-mode-setup)
 	 :init
 	 (setq lsp-keymap-prefix "C-c l")  ;; Or 'C-l', 's-l'
-	 :config
 	 (lsp-install-server nil 'omnisharp)
+	 :config
 	 (lsp-enable-which-key-integration t))
 
      #+end_src
