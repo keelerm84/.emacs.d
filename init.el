@@ -119,6 +119,9 @@
 		eshell-mode-hook))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
+(use-package neotree
+  :ensure t)
+
 (set-face-attribute 'default nil :font "JetBrains Mono Medium" :height keelerm/default-font-size)
 
 ;; Set the fixed pitch face
@@ -146,6 +149,8 @@
     "w" 'save-buffer
     "v" 'keelerm/vsplit-last-buffer
     "h" 'keelerm/hsplit-last-buffer
+    "nt" 'neotree-toggle
+    "nf" 'neotree-find
     "gs" 'magit-status
     "t"  '(:ignore t :which-key "toggles")
     "T" 'helm-imenu
