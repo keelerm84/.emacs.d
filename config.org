@@ -548,6 +548,20 @@
 	:ensure t
 	:hook (csharp-mode . lsp-deferred))
     #+end_src
+
+** Haskell
+
+   #+begin_src emacs-lisp
+     (use-package lsp-haskell
+       :ensure t)
+
+     (use-package haskell-mode
+       :ensure t
+       :hook
+       (haskell-mode . lsp-deferred)
+       (haskell-literate-mode . lsp-deferred))
+   #+end_src
+
 *** Ruby
 
     #+begin_src emacs-lisp

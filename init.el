@@ -356,6 +356,15 @@
   :ensure t
   :hook (csharp-mode . lsp-deferred))
 
+(use-package lsp-haskell
+  :ensure t)
+
+(use-package haskell-mode
+  :ensure t
+  :hook
+  (haskell-mode . lsp-deferred)
+  (haskell-literate-mode . lsp-deferred))
+
 (use-package ruby-mode
   :ensure t
   :hook (ruby-mode . lsp-deferred))
