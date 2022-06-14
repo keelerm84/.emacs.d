@@ -38,7 +38,7 @@
 ** Buffer Management
 
    #+begin_src emacs-lisp
-     (defun keelerm/vsplit-last-buffer (prefix)
+     (defun keelerm/hsplit-last-buffer (prefix)
        "Split the window vertically and display the previous buffer."
        (interactive "p")
        (split-window-vertically)
@@ -46,7 +46,7 @@
        (unless prefix
 	 (switch-to-next-buffer)))
 
-     (defun keelerm/hsplit-last-buffer (prefix)
+     (defun keelerm/vsplit-last-buffer (prefix)
        "Split the window horizontally and display the previous buffer."
        (interactive "p")
        (split-window-horizontally)
@@ -196,8 +196,8 @@
   This configuration uses [[https://evil.readthedocs.io/en/latest/index.html][evil-mode]] for a Vi-like modal editing experience. [[https://github.com/noctuid/general.el][general.el]] is used for easy keybinding configuration that integrates well with which-key. [[https://github.com/emacs-evil/evil-collection][evil-collection]] is used to automatically configure various Emacs modes with Vi-like keybindings for evil-mode.
 
   #+begin_src emacs-lisp
-    (bind-key "C-x 2" 'keelerm/hsplit-last-buffer)
-    (bind-key "C-x 3" 'keelerm/vsplit-last-buffer)
+    (bind-key "C-x 2" 'keelerm/vsplit-last-buffer)
+    (bind-key "C-x 3" 'keelerm/hsplit-last-buffer)
     (bind-key "C-x C-k" 'keelerm/delete-current-buffer-file)
   #+end_src
 
@@ -216,8 +216,8 @@
 
       (keelerm/leader-keys
 	"w" 'save-buffer
-	"v" 'keelerm/hsplit-last-buffer
-	"h" 'keelerm/vsplit-last-buffer
+	"v" 'keelerm/vsplit-last-buffer
+	"h" 'keelerm/hsplit-last-buffer
 	"gs" 'magit-status
 	"t"  '(:ignore t :which-key "toggles")
 	"T" 'helm-imenu
