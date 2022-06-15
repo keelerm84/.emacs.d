@@ -401,6 +401,13 @@
 (use-package rustic
   :ensure t)
 
+(use-package markdown-mode
+  :ensure t
+  :mode
+  (("README.md" . gfm-mode)
+   (".mdx" . markdown-mode))
+  :init (setq markdown-command "multimarkdown"))
+
 (use-package helm
   :diminish helm-mode
   :init

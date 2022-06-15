@@ -632,6 +632,27 @@
 
     #+end_src
 
+** Markdown
+
+   Make sure you install the multimarkdown tool first.
+
+   #+begin_src sh :tangle no
+
+     yay -S multimarkdown
+
+   #+end_src
+
+   #+begin_src emacs-lisp
+
+     (use-package markdown-mode
+       :ensure t
+       :mode
+       (("README.md" . gfm-mode)
+	(".mdx" . markdown-mode))
+       :init (setq markdown-command "multimarkdown"))
+
+   #+end_src
+
 ** Helm
 
    #+begin_src emacs-lisp
