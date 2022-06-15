@@ -216,8 +216,7 @@
 
 (defun keelerm/org-mode-setup ()
   (setq org-adapt-indentation t
-	org-hide-leading-stars nil
-	org-odd-levels-only t)
+	org-hide-leading-stars nil)
   (visual-line-mode 1))
 
 (use-package org

@@ -316,8 +316,7 @@
 
     (defun keelerm/org-mode-setup ()
       (setq org-adapt-indentation t
-	    org-hide-leading-stars nil
-	    org-odd-levels-only t)
+	    org-hide-leading-stars nil)
       (visual-line-mode 1))
 
     (use-package org
@@ -558,7 +557,7 @@
 	:hook (csharp-mode . lsp-deferred))
     #+end_src
 
-** Haskell
+*** Haskell
 
    #+begin_src emacs-lisp
      (use-package lsp-haskell
