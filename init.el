@@ -354,6 +354,7 @@
   :init
   (setq lsp-keymap-prefix "C-c l")  ;; Or 'C-l', 's-l'
   (lsp-install-server nil 'omnisharp)
+  (lsp-install-server nil 'dockerfile-ls)
   :config
   (lsp-enable-which-key-integration t))
 
@@ -364,6 +365,11 @@
 
 (use-package lsp-treemacs
   :after lsp)
+
+(use-package dockerfile-mode
+  :ensure t
+  :hook
+  (dockerfile-mode . lsp-deferred))
 
 (use-package csharp-mode
   :ensure t

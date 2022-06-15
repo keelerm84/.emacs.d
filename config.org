@@ -511,6 +511,7 @@
 	 :init
 	 (setq lsp-keymap-prefix "C-c l")  ;; Or 'C-l', 's-l'
 	 (lsp-install-server nil 'omnisharp)
+	 (lsp-install-server nil 'dockerfile-ls)
 	 :config
 	 (lsp-enable-which-key-integration t))
 
@@ -555,6 +556,17 @@
 	 :after lsp)
 
      #+end_src
+
+*** Docker
+
+    #+begin_src emacs-lisp
+
+      (use-package dockerfile-mode
+	:ensure t
+	:hook
+	(dockerfile-mode . lsp-deferred))
+
+    #+end_src
 
 *** C#
 
