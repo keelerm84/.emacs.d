@@ -383,6 +383,9 @@
   :config
   (define-key projectile-rails-mode-map (kbd "C-c r") 'projectile-rails-command-map))
 
+(use-package rustic
+  :ensure t)
+
 (use-package helm
   :diminish helm-mode
   :init
