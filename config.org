@@ -470,6 +470,7 @@
    #+end_src
 
 * Development
+
 ** Languages
 
 *** IDE Features with lsp-mode
@@ -690,6 +691,15 @@
      (use-package avy)
    #+end_src
 
+** Ripgrep
+
+   #+begin_src emacs-lisp
+
+     (use-package rg
+       :ensure t)
+
+   #+end_src
+
 * Runtime Performance
 
   Dial the GC threshold back down so that garbage collection happens
@@ -701,7 +711,6 @@
     (setq gc-cons-threshold (* 2 1000 1000))
 
   #+end_src
-
 
 * Custom Variables
 
@@ -722,17 +731,3 @@
      )
 
   #+end_src
-
-  #   (custom-set-variables
-  #  ;; custom-set-variables was added by Custom.
-  #  ;; If you edit it by hand, you could mess it up, so be careful.
-  #  ;; Your init file should contain only one such instance.
-  #  ;; If there is more than one, they won't work right.
-  #  '(package-selected-packages
-  #    '(helpful which-key doom-modeline all-the-icons doom-themes no-littering auto-package-update use-package)))
-  # (custom-set-faces
-  #  ;; custom-set-faces was added by Custom.
-  #  ;; If you edit it by hand, you could mess it up, so be careful.
-  #  ;; Your init file should contain only one such instance.
-  #  ;; If there is more than one, they won't work right.
-  #  )

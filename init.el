@@ -436,6 +436,9 @@
 
 (use-package avy)
 
+(use-package rg
+  :ensure t)
+
 ;; Make gc pauses faster by decreasing the threshold.
 (setq gc-cons-threshold (* 2 1000 1000))
 
@@ -445,6 +448,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(helm-minibuffer-history-key "M-p")
+ '(package-selected-packages
+   '(rg which-key visual-fill-column use-package rustic projectile-rails no-littering neotree lsp-ui lsp-treemacs lsp-haskell helm-projectile haskell-mode general forge exec-path-from-shell evil-surround evil-collection doom-themes doom-modeline csharp-mode company-box auto-package-update all-the-icons))
  '(safe-local-variable-values '((lsp-csharp-solution-file . "./NxCoreToPubSub.sln"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
