@@ -373,6 +373,10 @@
   (haskell-mode . lsp-deferred)
   (haskell-literate-mode . lsp-deferred))
 
+(use-package python
+  :ensure t
+  :hook (python-mode . lsp-deferred))
+
 (use-package ruby-mode
   :ensure t
   :hook (ruby-mode . lsp-deferred))

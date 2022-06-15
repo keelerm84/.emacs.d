@@ -551,7 +551,6 @@
 
      #+end_src
 
-
 *** C#
 
     #+begin_src emacs-lisp
@@ -572,6 +571,24 @@
        (haskell-mode . lsp-deferred)
        (haskell-literate-mode . lsp-deferred))
    #+end_src
+
+*** Python
+
+    Before using python, we have to install the appropriate language server.
+
+    #+begin_src sh :tangle no
+
+      pip install "python-lsp-server[all]"
+
+    #+end_src
+
+    #+begin_src emacs-lisp
+
+      (use-package python
+	:ensure t
+	:hook (python-mode . lsp-deferred))
+
+    #+end_src
 
 *** Ruby
 
