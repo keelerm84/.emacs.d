@@ -11,7 +11,7 @@
   (defvar keelerm/org-directory "~/Documents/Dropbox/OrgFiles/")
 
   ;; Make frame transparency overridable
-  (defvar keelerm/frame-transparency '(90 . 90))
+  (defvar keelerm/frame-transparency '(95 . 95))
 
   #+end_src
 
