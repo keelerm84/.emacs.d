@@ -130,8 +130,8 @@
 ;; Set the variable pitch face
 (set-face-attribute 'variable-pitch nil :font "JetBrains Mono Medium" :height keelerm/default-variable-font-size :weight 'regular)
 
-(bind-key "C-x 2" 'keelerm/vsplit-last-buffer)
-(bind-key "C-x 3" 'keelerm/hsplit-last-buffer)
+(bind-key "C-x 2" 'keelerm/hsplit-last-buffer)
+(bind-key "C-x 3" 'keelerm/vsplit-last-buffer)
 (bind-key "C-x C-k" 'keelerm/delete-current-buffer-file)
 
 ;; Make ESC quit prompts
