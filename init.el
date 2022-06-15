@@ -198,6 +198,11 @@
   :config
   (global-evil-surround-mode 1))
 
+(use-package evil-commentary
+  :ensure t
+  :config
+  (evil-commentary-mode))
+
 (use-package doom-themes
   :init (load-theme 'doom-gruvbox t))
 
