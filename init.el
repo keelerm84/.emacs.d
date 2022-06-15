@@ -408,6 +408,9 @@
    (".mdx" . markdown-mode))
   :init (setq markdown-command "multimarkdown"))
 
+(use-package yaml-mode
+  :ensure t)
+
 (use-package helm
   :diminish helm-mode
   :init

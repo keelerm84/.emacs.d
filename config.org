@@ -653,6 +653,15 @@
 
    #+end_src
 
+** YAML
+
+   #+begin_src emacs-lisp
+
+     (use-package yaml-mode
+       :ensure t)
+
+   #+end_src
+
 ** Helm
 
    #+begin_src emacs-lisp
