@@ -116,6 +116,7 @@
      (use-package exec-path-from-shell
        :ensure t
        :config
+       (add-to-list 'exec-path-from-shell-variables "TODOIST_TOKEN")
        (when (memq window-system '(mac ns x))
 	 (exec-path-from-shell-initialize))
        (when (daemonp)
@@ -760,6 +761,19 @@
 
      (use-package rg
        :ensure t)
+
+   #+end_src
+
+* Fun Stuff
+
+** Todoist
+
+   Make sure you set an environment variable =TODOIST_TOKEN= before
+   using this functionality.
+
+   #+begin_src emacs-lisp
+
+     (use-package todoist :ensure t)
 
    #+end_src
 

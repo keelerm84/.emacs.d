@@ -75,6 +75,7 @@
 (use-package exec-path-from-shell
   :ensure t
   :config
+  (add-to-list 'exec-path-from-shell-variables "TODOIST_TOKEN")
   (when (memq window-system '(mac ns x))
     (exec-path-from-shell-initialize))
   (when (daemonp)
@@ -464,6 +465,8 @@
 (use-package rg
   :ensure t)
 
+(use-package todoist :ensure t)
+
 ;; Make gc pauses faster by decreasing the threshold.
 (setq gc-cons-threshold (* 2 1000 1000))
 
@@ -473,6 +476,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(helm-minibuffer-history-key "M-p")
+ '(package-selected-packages
+   '(todoist yaml-mode which-key visual-fill-column use-package rustic rg projectile-rails no-littering neotree lsp-ui lsp-treemacs lsp-haskell helm-projectile haskell-mode general forge exec-path-from-shell evil-surround evil-commentary evil-collection doom-themes doom-modeline dockerfile-mode csharp-mode company-box auto-package-update all-the-icons))
  '(safe-local-variable-values '((lsp-csharp-solution-file . "./NxCoreToPubSub.sln"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
