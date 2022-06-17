@@ -337,6 +337,9 @@
       (setq org-log-done 'time)
       (setq org-log-into-drawer t)
 
+      (setq org-fontify-quote-and-verse-blocks t)
+      (set-face-attribute 'org-quote nil :slant 'normal :background (face-background 'org-block) :extend t)
+
       (setq org-agenda-filesa
 	    '("~/Documents/Dropbox/OrgFiles/"))
 
