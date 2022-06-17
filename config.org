@@ -455,7 +455,8 @@
        (org-babel-do-load-languages
 	'org-babel-load-languages
 	'((emacs-lisp . t)
-	  (python . t)))
+	  (python . t)
+	  (swift . t)))
 
        (push '("conf-unix" . conf-unix) org-src-lang-modes))
 
@@ -636,6 +637,17 @@
 
     #+end_src
 
+*** Swift
+
+    #+begin_src emacs-lisp
+
+      (use-package swift-mode
+	:ensure t)
+
+      (use-package ob-swift
+	:ensure t)
+
+    #+end_src
 ** Markdown
 
    Make sure you install the multimarkdown tool first.

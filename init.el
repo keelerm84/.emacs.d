@@ -334,7 +334,8 @@
   (org-babel-do-load-languages
    'org-babel-load-languages
    '((emacs-lisp . t)
-     (python . t)))
+     (python . t)
+     (swift . t)))
 
   (push '("conf-unix" . conf-unix) org-src-lang-modes))
 
@@ -403,6 +404,12 @@
   (define-key projectile-rails-mode-map (kbd "C-c r") 'projectile-rails-command-map))
 
 (use-package rustic
+  :ensure t)
+
+(use-package swift-mode
+  :ensure t)
+
+(use-package ob-swift
   :ensure t)
 
 (use-package markdown-mode
@@ -479,8 +486,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(helm-minibuffer-history-key "M-p")
- '(package-selected-packages
-   '(todoist yaml-mode which-key visual-fill-column use-package rustic rg projectile-rails no-littering neotree lsp-ui lsp-treemacs lsp-haskell helm-projectile haskell-mode general forge exec-path-from-shell evil-surround evil-commentary evil-collection doom-themes doom-modeline dockerfile-mode csharp-mode company-box auto-package-update all-the-icons))
  '(safe-local-variable-values '((lsp-csharp-solution-file . "./NxCoreToPubSub.sln"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
